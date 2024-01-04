@@ -1,0 +1,130 @@
+CLUSTAL O(1.2.4) multiple sequence alignment
+
+
+7YUY_1|Chain      MNTDQQPYQGQTDYTQGPGNGQSQEQDYDQYGQPLYPSQADGYYDPNVAAGTEADMYGQQ	60
+NP_014218.2       ------------------------------------------------------------	0
+                                                                              
+
+7YUY_1|Chain      PPNESYDQDYTNGEYYGQPPNMAAQDGENFSDFSSYGPPGTPGYDSYGGQYTASQMSYGE	120
+NP_014218.2       ------------------------------------------------------------	0
+                                                                              
+
+7YUY_1|Chain      PNSSGTSTPIYGNYDPNAIAMALPNEPYPAWTADSQSPVSIEQIEDIFIDLTNRLGFQRD	180
+NP_014218.2       ------------------------------------------------------------	0
+                                                                              
+
+7YUY_1|Chain      SMRNMFDHFMVLLDSRSSRMSPDQALLSLHADYIGGDTANYKKWYFAAQLDMDDEIGFRN	240
+NP_014218.2       ------------------------------------------------------------	0
+                                                                              
+
+7YUY_1|Chain      MSLGKLSRKARKAKKKNKKAMEEANPEDTEETLNKIEGDNSLEAADFRWKAKMNQLSPLE	300
+NP_014218.2       ------------------------------------------------------------	0
+                                                                              
+
+7YUY_1|Chain      RVRHIALYLLCWGEANQVRFTAECLCFIYKCALDYLDSPLCQQRQEPMPEGDFLNRVITP	360
+NP_014218.2       ------------------------------------------------------------	0
+                                                                              
+
+7YUY_1|Chain      IYHFIRNQVYEIVDGRFVKRERDHNKIVGYDDLNQLFWYPEGIAKIVLEDGTKLIELPLE	420
+NP_014218.2       ------------------------------------------------------------	0
+                                                                              
+
+7YUY_1|Chain      ERYLRLGDVVWDDVFFKTYKETRTWLHLVTNFNRIWVMHISIFWMYFAYNSPTFYTHNYQ	480
+NP_014218.2       ------------------------------------------------------------	0
+                                                                              
+
+7YUY_1|Chain      QLVDNQPLAAYKWASCALGGTVASLIQIVATLCEWSFVPRKWAGAQHLSRRFWFLCIIFG	540
+NP_014218.2       ----------------------------------------------------------MP	2
+                                                                            : 
+
+7YUY_1|Chain      INLGPIIFVFAYDKDTVYSTAAHVVAAVMFFVAVATIIFFSIMPLGGLFTSYMKKST---	597
+NP_014218.2       LNIIGTALLDGTDKIPYYQTIKKV---APYVLATGAIKYWSRGPSNTWERKLHGKVYLVT	59
+                  :*:    :: . **   *.*  :*   . :.:*..:* ::*  * .    .   *     
+
+7YUY_1|Chain      ----------RRYVASQTFTAAFAPLHGLDRWMSYLVWVTVFAAKYSESYYFLVLPLRDP	647
+NP_014218.2       GATSQGMGTSVAYKMAELGAQLIILTREVDEWVT--EWCEELREKTKNELIFV-------	110
+                              *  ::  :  :   : :*.*::   *   :  * .:.  *:       
+
+7YUY_1|Chain      IRILSTTAMRCTGEYWWGAV------LCKVQPKIVLGLVIATDFILFFLDTYLWYIIVNT	701
+NP_014218.2       --------EKCDLSNLWEIRKFATSWLDNSPPRRLDGVI---------------------	141
+                           :*  .  *         * :  *: : *::                     
+
+7YUY_1|Chain      IFSVGKSFYLGISILTPWRNIFTRLPKRIYSKILATTDMEIKYKPKVLISQVWNAIIISM	761
+NP_014218.2       ---------VMSGDMEPWGIPKISLPQRRSSKDGLELQIATNYVAIF-------------	179
+                           :  . : **      **:*  **     ::  :*   .             
+
+7YUY_1|Chain      YREHLLAIDHVQKLLYHQVPSE--IEGKRTLRAPTFFVSQDDNNFETEFFPRDSEAERRI	819
+NP_014218.2       ---------HLLNLLQPSFKAQPPDRDVRIILATCWLQVVGDINIEDPLWQNAK-YKSAL	229
+                           *: :**  .. ::   .. * : *  ::   .* *:*  :: . .  :  :
+
+7YUY_1|Chain      SFFAQSL----------STPIPEPLPV---------DNMPTFTVLTPHYAERILLSLREI	860
+NP_014218.2       KFFASSKLQLGLSMMELQRRLTEDIKNQKTNGAERTGKNVTITMVQPGTMRS--NSLRRV	287
+                  .***.*           .  : * :           .:  *:*:: *   .    ***.:
+
+7YUY_1|Chain      IREDDQFSRVTLLEYLKQLHPVEWECFVKDTKILAEETAAYEGNENEAEKEDALKSQIDD	920
+NP_014218.2       ISNGSV--VLLIILYCILLYPILWLFTKSGRR----------------------------	317
+                  * :..    : :: *   *:*: *    .. :                            
+
+7YUY_1|Chain      LPFYCIGFKSAAPEYTLRTRIWASLRSQTLYRTISGFMNYSRAIKLLYRVENPEIVQMFG	980
+NP_014218.2       -----------------------------------------GDQSFLYALMTPELEEVNL	336
+                                                              .:** : .**: ::  
+
+7YUY_1|Chain      GNAEGLERELEKMARRKFKFLVSMQRLAKFKPHELENAEFLLRAYPDLQIAYLDEEPPLT	1040
+NP_014218.2       KDTK--------------VKYISDCSIVKFARKEFDDEELQKKLFDNTERDILQLEKKVA	382
+                   :::                 :*   :.**  :*::: *:  : : : :   *: *  ::
+
+7YUY_1|Chain      EGEEPRIYSALIDGHCEILDNGRRRPKFRVQLSGNPILGDGKSDNQNHALIFYRGEYIQL	1100
+NP_014218.2       AKRN-------------ANKTGNQNSKKKSQNKSRKDD----------------------	407
+                    .:               ..*.:. * : * ...                         
+
+7YUY_1|Chain      IDANQDNYLEECLKIRSVLAEFEELNVEQVNPYAPGLRYEEQTTNHPVAIVGAREYIFSE	1160
+NP_014218.2       ------------------------------------------------------------	407
+                                                                              
+
+7YUY_1|Chain      NSGVLGDVAAGKEQTFGTLFARTLSQIGGKLHYGHPDFINATFMTTRGGVSKAQKGLHLN	1220
+NP_014218.2       ------------------------------------------------------------	407
+                                                                              
+
+7YUY_1|Chain      EDIYAGMNAMLRGGRIKHCEYYQCGKGRDLGFGTILNFTTKIGAGMGEQMLSREYYYLGT	1280
+NP_014218.2       ------------------------------------------------------------	407
+                                                                              
+
+7YUY_1|Chain      QLPVDRFLTFYYAHPGFHLNNLFIQLSLQMFMLTLVNLSSLAHESIMCIYDRNKPKTDVL	1340
+NP_014218.2       ------------------------------------------------------------	407
+                                                                              
+
+7YUY_1|Chain      VPIGCYNFQPAVDWVRRYTLSIFIVFWIAFVPIVVQELIERGLWKATQRFFCHLLSLSPM	1400
+NP_014218.2       ------------------------------------------------------------	407
+                                                                              
+
+7YUY_1|Chain      FEVFAGQIYSSALLSDLAIGGARYISTGRGFATSRIPFSILYSRFAGSAIYMGARSMLML	1460
+NP_014218.2       ------------------------------------------------------------	407
+                                                                              
+
+7YUY_1|Chain      LFGTVAHWQAPLLWFWASLSSLIFAPFVFNPHQFAWEDFFLDYRDYIRWLSRGNNQYHRN	1520
+NP_014218.2       ------------------------------------------------------------	407
+                                                                              
+
+7YUY_1|Chain      SWIGYVRMSRARITGFKRKLVGDESEKAAGDASRAHRTNLIMAEIIPCAIYAAGCFIAFT	1580
+NP_014218.2       ------------------------------------------------------------	407
+                                                                              
+
+7YUY_1|Chain      FINAQTGVKTTDDDRVNSVLRIIICTLAPIAVNLGVLFFCMGMSCCSGPLFGMCCKKTGS	1640
+NP_014218.2       ------------------------------------------------------------	407
+                                                                              
+
+7YUY_1|Chain      VMAGIAHGVAVIVHIAFFIVMWVLESFNFVRMLIGVVTCIQCQRLIFHCMTALMLTREFK	1700
+NP_014218.2       ------------------------------------------------------------	407
+                                                                              
+
+7YUY_1|Chain      NDHANTAFWTGKWYGKGMGYMAWTQPSRELTAKVIELSEFAADFVLGHVILICQLPLIII	1760
+NP_014218.2       ------------------------------------------------------------	407
+                                                                              
+
+7YUY_1|Chain      PKIDKFHSIMLFWLKPSRQIRPPIYSLKQTRLRKRMVKKYCSLYFLVLAIFAGCIIGPAV	1820
+NP_014218.2       ------------------------------------------------------------	407
+                                                                              
+
+7YUY_1|Chain      ASAKIHKHIGDSLDGVVHNLFQPINTTNNDTGSQMSTYQSHYYTHTPSLKTWSTIK	1876
+NP_014218.2       --------------------------------------------------------	407
+                                                                          
