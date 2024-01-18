@@ -1,0 +1,195 @@
+ --- setwater ---
+Input file name (PDB of target molecule) ?
+  -> all.pdb                                                                         
+Do you use crystal water file (Y or N) ?
+  -> not use.
+Input file name (output of water coord) ?
+  -> setwater.pdb                                                                    
+Input cell type (sphere="S", cube="C")?
+Input length (X,Y,Z) ?
+(positive vale:cellsize,negative value:mergin)
+  -> cube :   -8.0000000000  -8.0000000000  -8.0000000000
+Input center of water (mass center="C", 3D-coordinate="D") ? 
+  -> mass center
+Input density of water (usually 1.0) ? 
+  ->    1.0000000000
+Input vdW damping factor (usually 1.0) ? 
+  ->    1.0000000000
+Input water model(TIP3P="3", TIP4P="4") ? 
+  -> TIP3P
+Do you use precise model (Y or N) ?
+  -> N
+Input file name (information output) ?
+  -> setwater.inf                                                                    
+Do you use membrane (Y or N) ?
+  -> N
+ @@ n_atom=        6639
+ min/max  =   73.1160000000000        144.007000000000     
+ min/max  =   17.8550000000000        98.7500000000000     
+ min/max  =   61.3160000000000        132.386000000000     
+  xyz     =  -8.00000000000000       -8.00000000000000     
+  -8.00000000000000     
+ --- addion version 2.002 2014/01/06 ---
+ Biomolecule file (input file) name = 
+ Biomolecule file (output file) name = 
+ 
+ Biomolecule file (input): all.pdb.setwater
+ Biomolecule file (output): all.pdb.addion
+ mode 1:direct inp, 2:minimum , 3 : density
+  in case 3, 0.00277: normal saline solution
+ 4 : normal saline solution (dencity=0.00277)
+ mol density of Na/Cl =
+ Do you want to replace all water?(Y/N)
+ if Yes, all water molecules including 
+     crystal water molecules can be replaced
+ if No, water molecules excluding 
+     crystal water molecules can be replaced
+ 
+ Number of atoms (Biomolecule file) =       69465
+ 
+ Number of water molecules =       20942
+ Number of atoms in water =           3
+ Total charge =  +14
+ 
+ Number of Na+ ions to be added =          58
+ Number of Cl- ions to be added =          72
+ Total charge after couter-ion addition =   +0
+ mol density of Na/Cl =  2.7699999E-03
+ 
+ Exclusion distance =
+
+ Exclusion distance =   6.000
+ probability of replacing water by ion(value=0.0-1.0: 0.2 is recommended)=
+ probability value =  0.2000000    
+ 
+ 
+           1 ion added
+           2 ions added
+           3 ions added
+           4 ions added
+           5 ions added
+           6 ions added
+           7 ions added
+           8 ions added
+           9 ions added
+          10 ions added
+          11 ions added
+          12 ions added
+          13 ions added
+          14 ions added
+          15 ions added
+          16 ions added
+          17 ions added
+          18 ions added
+          19 ions added
+          20 ions added
+          21 ions added
+          22 ions added
+          23 ions added
+          24 ions added
+          25 ions added
+          26 ions added
+          27 ions added
+          28 ions added
+          29 ions added
+          30 ions added
+          31 ions added
+          32 ions added
+          33 ions added
+          34 ions added
+          35 ions added
+          36 ions added
+          37 ions added
+          38 ions added
+          39 ions added
+          40 ions added
+          41 ions added
+          42 ions added
+          43 ions added
+          44 ions added
+          45 ions added
+          46 ions added
+          47 ions added
+          48 ions added
+          49 ions added
+          50 ions added
+          51 ions added
+          52 ions added
+          53 ions added (random)
+          54 ions added (random)
+          55 ions added (random)
+          56 ions added (random)
+          57 ions added (random)
+          58 ions added (random)
+          59 ions added (random)
+          60 ions added (random)
+          61 ions added (random)
+          62 ions added (random)
+          63 ions added (random)
+          64 ions added (random)
+          65 ions added (random)
+          66 ions added (random)
+          67 ions added (random)
+          68 ions added (random)
+          69 ions added (random)
+          70 ions added (random)
+          71 ions added (random)
+          72 ions added (random)
+          73 ions added (random)
+          74 ions added (random)
+          75 ions added (random)
+          76 ions added (random)
+          77 ions added (random)
+          78 ions added (random)
+          79 ions added (random)
+          80 ions added (random)
+          81 ions added (random)
+          82 ions added (random)
+          83 ions added (random)
+          84 ions added (random)
+          85 ions added (random)
+          86 ions added (random)
+          87 ions added (random)
+          88 ions added (random)
+          89 ions added (random)
+          90 ions added (random)
+          91 ions added (random)
+          92 ions added (random)
+          93 ions added (random)
+          94 ions added (random)
+          95 ions added (random)
+          96 ions added (random)
+          97 ions added (random)
+          98 ions added (random)
+          99 ions added (random)
+         100 ions added (random)
+         101 ions added (random)
+         102 ions added (random)
+         103 ions added (random)
+         104 ions added (random)
+         105 ions added (random)
+         106 ions added (random)
+         107 ions added (random)
+         108 ions added (random)
+         109 ions added (random)
+         110 ions added (random)
+         111 ions added (random)
+         112 ions added (random)
+         113 ions added (random)
+         114 ions added (random)
+         115 ions added (random)
+         116 ions added (random)
+         117 ions added (random)
+         118 ions added (random)
+         119 ions added (random)
+         120 ions added (random)
+         121 ions added (random)
+         122 ions added (random)
+         123 ions added (random)
+         124 ions added (random)
+         125 ions added (random)
+         126 ions added (random)
+         127 ions added (random)
+         128 ions added (random)
+         129 ions added (random)
+         130 ions added (random)

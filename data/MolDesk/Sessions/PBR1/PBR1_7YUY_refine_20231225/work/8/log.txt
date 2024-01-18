@@ -1,0 +1,329 @@
+  
+ ************************************************
+ *                                              *
+ *             psygene-G(17/10/06)              *
+ *                                              *
+ * Japan Biological Information Research Center *
+ *        Aomi 2-41-6, Koto-ku, Tokyo 135-0064  *
+ *                    JAPAN                     *
+ *                                              *
+ *              v0.933 : Oct 6, 2017.           *
+ *         space decomposition MD version       *
+ *                                              *
+ ************************************************
+  
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              SPACE INPUT starts.     +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ 
+ INFORMATION> SPACE DECOMPOSITION
+       BOUND X=  65.1160000  152.0070000
+             Y=   9.8550000  106.7500000
+             Z=  53.3160000  140.3860000
+ 
+       DIVISION X=        2
+                Y=        2
+                Z=        2
+ 
+       NUMBER OF CELLS=     8
+ 
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              GPU starts.             +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> GPU
+   GPU SERVICE TYPE      : gpu used                      
+   GPU PARAMETERS
+     USED DEVICE IDS     : 0
+     GPU KERNEL TYPE     : grid (spatial subdivision)    
+     GRID SQUARE SIZE    :    8.00000000000000     
+     GRID SCALING SIZE   :    1.10000000000000     
+     DOUBLE PRECISION KERNELS
+       INVOCATION        : double    
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              INPUT starts.           +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> INPUT FORMATTED TOPOLOGY FILE: Pro.tpl
+  
+      1) TOTAL NUMBER
+        NUMBER OF MOLECULES         :            4
+        NUMBER OF CHAINS            :        20943
+        NUMBER OF RESIDUES          :        21349
+        NUMBER OF ATOMS             :        69205
+        NUMBER OF BONDS             :        69135
+        NUMBER OF ANGLES            :        12171
+        NUMBER OF TORSIONS          :        24300
+        NUMBER OF IMPRO.            :         1246
+        MAXIMUM NUMBER OF FUNC.     :            1
+        MAXIMUM NUMBER OF ATOM-TYPE :           93
+  
+      2) EACH DATA
+         A) NUMBER OF CHAINS IN EACH MOLECULE 
+          MOLECULE            1    :            1
+          MOLECULE            2    :        20812
+          MOLECULE            3    :           58
+          MOLECULE            4    :           72
+         B) NUMBER OF ATOMS IN EACH MOLECULE 
+          MOLECULE            1    :         6639
+          MOLECULE            2    :            3
+          MOLECULE            3    :            1
+          MOLECULE            4    :            1
+         C) NUMBER OF BONDS IN EACH MOLECULE 
+          MOLECULE            1    :         6699
+          MOLECULE            2    :            3
+          MOLECULE            3    :            0
+          MOLECULE            4    :            0
+         D) NUMBER OF ANGLES IN EACH MOLECULE 
+          MOLECULE            1    :        12171
+          MOLECULE            2    :            0
+          MOLECULE            3    :            0
+          MOLECULE            4    :            0
+         E) NUMBER OF TORSIONS IN EACH MOLECULE 
+          MOLECULE            1    :        24300
+          MOLECULE            2    :            0
+          MOLECULE            3    :            0
+          MOLECULE            4    :            0
+         F) NUMBER OF IMPROPER IN EACH MOLECULE 
+          MOLECULE            1    :         1246
+          MOLECULE            2    :            0
+          MOLECULE            3    :            0
+          MOLECULE            4    :            0
+ INFORMATION> INPUT PDB FILE: all_prev.pdb
+ INFORMATION> REFERENCE PDB FILE: all_prev.pdb
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              MINI starts.            +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+       PARAMETERS FOR MINIMIZATION 
+  
+       1) GENERAL PARAMETERS  
+          METHOD          : conjugate 
+          CPU LIMIT (S)   :   0.000000000000000E+000
+          LOOP LIMIT      :         5000
+          MONITORING LOG    :          100
+          LOG FORMAT        : short  
+          CALC. OF RMSD     : false           
+          CONVERGE (RMSF)   :   0.100000000000000     
+          INITIAL STEP(A)   :   1.000000000000000E-002
+          LINE SEARCH LIMIT :           10
+          LINE CONV.RATE    :   0.100000000000000     
+       2) ANALYSIS FILE 
+          LOGICAL UNIT      :           30
+          CLOSE             :  F
+       3) PARAMETERS FOR ENERGY CALCULATION 
+          POTENTIAL FUNC. : AMBER
+          CUT-OFF LOGIC   : ATOM BASE CUTOFF
+          CUT-OFF DIST.        :    16.0000000000000     
+          ZERO-MULITPOLE    : zero-quadrupole 
+          DIELECTRIC IS DEPEND DISTANCE: false           
+          DIELECTRIC VAL. :    1.00000000000000     
+          APPLY PERIODIC BOUNDARY
+           X AXIS           :    86.8910000000000     
+           Y AXIS           :    96.8950000000000     
+           Z AXIS           :    87.0700000000000     
+          CENTER OF BOX IS INPUT
+           X AXIS           :    108.561500000000     
+           Y AXIS           :    58.3025000000000     
+           Z AXIS           :    96.8510000000000     
+ INFORMATION> ZERO-MULTIPOLE SUMMANTION
+   ALPHA (EWAPRM)        :  0.000000000000000E+000
+   ZERO-MULTIPOLE
+     POLE NUMBER         :            4
+  
+ INFORMATION> MINI for psygene-G(17/10/06) 
+      ENERGY MINIMIZATION 
+  
+ INFORMATION> GPU
+   START GPU INITIALIZATION
+   MAX IDEAL ATOM NUMBER:
+   CELL ATOMS = 15328 CELL + REF ATOMS = 76690
+   GPU ALLOCATION BY MPI
+   GPU DEVICE DETECTION:
+     RANK = 0 NODE = molspace DEVICE = 0
+     RANK = 1 NODE = molspace DEVICE = 0
+     RANK = 2 NODE = molspace DEVICE = 0
+     RANK = 3 NODE = molspace DEVICE = 0
+     RANK = 4 NODE = molspace DEVICE = 0
+     RANK = 5 NODE = molspace DEVICE = 0
+     RANK = 6 NODE = molspace DEVICE = 0
+     RANK = 7 NODE = molspace DEVICE = 0
+     READY DEVICES: RANK =            3
+     READY DEVICES: RANK =            0
+     READY DEVICES: RANK =            6
+     READY DEVICES: RANK =            4
+     READY DEVICES: RANK =            1
+     READY DEVICES: RANK =            5
+     READY DEVICES: RANK =            2
+   END GPU INITIALIZATION
+     READY DEVICES: RANK =            7
+     CPU TIME FOR ENERGY   :       0.1261 (S) 
+  
+ INFORMATION> MINI 
+     ENERGY OF INITIAL STRUCTURE 
+  
+      LOOP       :            0
+       TOTAL     :  -291661.515501894     
+       BOND      :   22311.0788274846     
+       ANGLE     :   844.130545663464     
+       TORS.     :   3871.83088163143     
+       IMPRO.    :   52.6469625105953     
+       VDW14     :   1295.62155843897     
+       ELE14     :   15867.8362437207     
+       VDW15     :   51436.0915209513     
+       ELE15     :  -387340.752042295     
+       CAP       :  0.000000000000000E+000
+       PSR       :  0.000000000000000E+000
+       DSR       :  0.000000000000000E+000
+       DHR       :  0.000000000000000E+000
+ 
+      RMSF       :   0.717332589257313     
+      MAX FORCE  :    17.7980551521000        CHAIN            1  GLU-    
+         332  CD  
+  
+    DISTRIBUTION OF FORCE  (KCAL/(MOL*A)) 
+      1.0D+3 <=                         0
+      1.0D+2 <=    < 1.0D+3             0
+      1.0D+1 <=    < 1.0D+2             2
+      1.0D0  <=    < 1.0D+1         10368
+      1.0D-1 <=    < 1.0D0          57199
+      1.0D-2 <=    < 1.0D-1          1635
+      1.0D-3 <=    < 1.0D-2             1
+                   < 1.0D-3             0
+    
+  
+ INFORMATION> conjugate 
+              LOOP START 
+ 
+  LOOP NUMBER      :             100  POTENTIAL        :  -0.2928133E+06
+  R.M.S.F.         :   0.5746931E+01
+ minimum force =  0.211532971557345      step =           4
+ 
+  LOOP NUMBER      :             200  POTENTIAL        :  -0.2936194E+06
+  R.M.S.F.         :   0.8326391E+00
+ 
+  LOOP NUMBER      :             300  POTENTIAL        :  -0.2938822E+06
+  R.M.S.F.         :   0.1051563E+01
+ 
+  LOOP NUMBER      :             400  POTENTIAL        :  -0.2941542E+06
+  R.M.S.F.         :   0.4664952E+00
+ 
+  LOOP NUMBER      :             500  POTENTIAL        :  -0.2943692E+06
+  R.M.S.F.         :   0.4060068E+00
+ 
+  LOOP NUMBER      :             600  POTENTIAL        :  -0.2945862E+06
+  R.M.S.F.         :   0.6723191E+00
+ 
+  LOOP NUMBER      :             700  POTENTIAL        :  -0.2948347E+06
+  R.M.S.F.         :   0.1123948E+01
+ 
+  LOOP NUMBER      :             800  POTENTIAL        :  -0.2954523E+06
+  R.M.S.F.         :   0.5158899E+00
+ 
+  LOOP NUMBER      :             900  POTENTIAL        :  -0.2958212E+06
+  R.M.S.F.         :   0.5077448E+00
+ 
+  LOOP NUMBER      :            1000  POTENTIAL        :  -0.2960081E+06
+  R.M.S.F.         :   0.3996668E+00
+ 
+  LOOP NUMBER      :            1100  POTENTIAL        :  -0.2962062E+06
+  R.M.S.F.         :   0.8150453E+00
+ 
+  LOOP NUMBER      :            1200  POTENTIAL        :  -0.2964523E+06
+  R.M.S.F.         :   0.3390622E+00
+ 
+  LOOP NUMBER      :            1300  POTENTIAL        :  -0.2965749E+06
+  R.M.S.F.         :   0.5857164E+00
+ 
+  LOOP NUMBER      :            1400  POTENTIAL        :  -0.2967404E+06
+  R.M.S.F.         :   0.1924087E+00
+ 
+  LOOP NUMBER      :            1500  POTENTIAL        :  -0.2968660E+06
+  R.M.S.F.         :   0.2349223E+00
+ 
+  LOOP NUMBER      :            1600  POTENTIAL        :  -0.2970757E+06
+  R.M.S.F.         :   0.2714805E+00
+ 
+  LOOP NUMBER      :            1700  POTENTIAL        :  -0.2971924E+06
+  R.M.S.F.         :   0.5177427E+00
+ minimize: conjugate loop is converged
+  
+ INFORMATION> MINI 
+     ENERGY OF FINAL STRUCTURE 
+  
+      LOOP       :         1715
+       TOTAL     :  -297202.417329071     
+       BOND      :   23045.4520270537     
+       ANGLE     :   857.848097717217     
+       TORS.     :   3859.84871624499     
+       IMPRO.    :   50.4766839007601     
+       VDW14     :   1298.60088232826     
+       ELE14     :   15828.7938059628     
+       VDW15     :   55140.7595716902     
+       ELE15     :  -397284.197113969     
+       CAP       :  0.000000000000000E+000
+       PSR       :  0.000000000000000E+000
+       DSR       :  0.000000000000000E+000
+       DHR       :  0.000000000000000E+000
+ 
+      RMSF       :   9.216143194797401E-002
+      MAX FORCE  :    4.66053885449031        CHAIN            1  GLU-    
+         360  CD  
+  
+    DISTRIBUTION OF FORCE  (KCAL/(MOL*A)) 
+      1.0D+3 <=                         0
+      1.0D+2 <=    < 1.0D+3             0
+      1.0D+1 <=    < 1.0D+2             0
+      1.0D0  <=    < 1.0D+1            49
+      1.0D-1 <=    < 1.0D0           7396
+      1.0D-2 <=    < 1.0D-1         59012
+      1.0D-3 <=    < 1.0D-2          2744
+                   < 1.0D-3             4
+    
+ INFORMATION> GPU
+   START CLEANUP GPGPU
+   END CLEANUP GPGPU
+  
+ INFORMATION> MINI 
+            TOTAL CPU TIME (S)  :       209.21475
+              MINI LOOP         :       207.54753
+              OTHER             :         1.66722
+
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              OUTPUT starts.          +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+  
+     CPU TIME FOR OUTPDB   :       0.1166 (S) 
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +       Job has finished.              +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+  
+ TIME FOR TOTAL   210.349678993225     
+  

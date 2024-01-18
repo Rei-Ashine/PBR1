@@ -1,0 +1,10 @@
+REMARK     SETWATER(2021) RESULTS
+REMARK       TARGET MOLECULE   -> all.pdb                                 
+REMARK       CRYSTAL WATER     -> NOT USE                                 
+REMARK       CELL    ->      C   86.891000   96.895000   87.070000
+REMARK       CENTER  ->      C  108.561500   58.302500   96.851000
+REMARK       DENSITY ->     1.000000
+REMARK       DAMP F. ->     1.000000    (PROBE R. =     1.400000A)
+REMARK       NUMBER OF CRYSTAL WATER   :       0
+REMARK       NUMBER OF WATER MOLECULE  :   20942
+REMARK       NUMBER OF WATER ATOM      :   62826

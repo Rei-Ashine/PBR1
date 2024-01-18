@@ -1,0 +1,293 @@
+
+## File 1
+fselect 1
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [108.707,57.704,97.076004]
+
+#Atoms
+select * & file = 1
+color cpk
+spacefill off
+displayatom on
+set_atom_image 1 0:0:0:0-0:0:0:18 true 0 255 255 255 0.0
+set_atom_image 1 0:0:1:0-0:0:12:6 true 0 255 0 128 0.0
+set_atom_image 1 0:0:13:0-0:0:13:13 true 0 255 255 255 0.0
+set_atom_image 1 0:0:14:0-0:0:18:20 true 0 96 128 255 0.0
+set_atom_image 1 0:0:19:0-0:0:28:20 true 0 255 0 128 0.0
+set_atom_image 1 0:0:29:0-0:0:33:6 true 0 96 128 255 0.0
+set_atom_image 1 0:0:34:0-0:0:37:20 true 0 255 0 128 0.0
+set_atom_image 1 0:0:38:0-0:0:40:23 true 0 96 128 255 0.0
+set_atom_image 1 0:0:41:0-0:0:43:10 true 0 255 255 255 0.0
+set_atom_image 1 0:0:44:0-0:0:45:13 true 0 96 128 255 0.0
+set_atom_image 1 0:0:46:0-0:0:49:21 true 0 255 255 255 0.0
+set_atom_image 1 0:0:50:0-0:0:51:16 true 0 96 128 255 0.0
+set_atom_image 1 0:0:52:0-0:0:52:6 true 0 255 255 255 0.0
+set_atom_image 1 0:0:53:0-0:0:56:18 true 0 255 0 128 0.0
+set_atom_image 1 0:0:57:0-0:0:59:6 true 0 96 128 255 0.0
+set_atom_image 1 0:0:60:0-0:0:63:16 true 0 255 255 255 0.0
+set_atom_image 1 0:0:64:0-0:0:64:6 true 0 96 128 255 0.0
+set_atom_image 1 0:0:65:0-0:0:70:9 true 0 255 0 128 0.0
+set_atom_image 1 0:0:71:0-0:0:72:21 true 0 255 255 255 0.0
+set_atom_image 1 0:0:73:0-0:0:79:16 true 0 255 0 128 0.0
+set_atom_image 1 0:0:80:0-0:0:80:18 true 0 96 128 255 0.0
+set_atom_image 1 0:0:81:0-0:0:87:15 true 0 255 0 128 0.0
+set_atom_image 1 0:0:88:0-0:0:92:13 true 0 96 128 255 0.0
+set_atom_image 1 0:0:93:0-0:0:93:14 true 0 255 255 255 0.0
+set_atom_image 1 0:0:94:0-0:0:94:23 true 0 96 128 255 0.0
+set_atom_image 1 0:0:95:0-0:0:96:14 true 0 255 255 255 0.0
+set_atom_image 1 0:0:97:0-0:0:97:14 true 0 96 128 255 0.0
+set_atom_image 1 0:0:98:0-0:0:98:18 true 0 255 255 255 0.0
+set_atom_image 1 0:0:99:0-0:0:106:18 true 0 255 0 128 0.0
+set_atom_image 1 0:0:107:0-0:0:107:18 true 0 96 128 255 0.0
+set_atom_image 1 0:0:108:0-0:0:108:19 true 0 255 255 255 0.0
+set_atom_image 1 0:0:109:0-0:0:109:15 true 0 96 128 255 0.0
+set_atom_image 1 0:0:110:0-0:0:112:10 true 0 255 0 128 0.0
+set_atom_image 1 0:0:113:0-0:0:113:11 true 0 96 128 255 0.0
+set_atom_image 1 0:0:114:0-0:0:114:18 true 0 255 255 255 0.0
+set_atom_image 1 0:0:115:0-0:0:119:14 true 0 96 128 255 0.0
+set_atom_image 1 0:0:120:0-0:0:126:10 true 0 255 255 255 0.0
+set_atom_image 1 0:0:127:0-0:0:128:18 true 0 96 128 255 0.0
+set_atom_image 1 0:0:129:0-0:0:132:13 true 0 255 255 255 0.0
+set_atom_image 1 0:0:133:0-0:0:141:15 true 0 96 128 255 0.0
+set_atom_image 1 0:0:142:0-0:0:143:10 true 0 255 255 255 0.0
+set_atom_image 1 0:0:144:0-0:0:144:6 true 0 96 128 255 0.0
+set_atom_image 1 0:0:145:0-0:0:145:11 true 0 255 255 255 0.0
+set_atom_image 1 0:0:146:0-0:0:147:14 true 0 96 128 255 0.0
+set_atom_image 1 0:0:148:0-0:0:151:18 true 0 255 255 255 0.0
+set_atom_image 1 0:0:152:0-0:0:154:18 true 0 96 128 255 0.0
+set_atom_image 1 0:0:155:0-0:0:159:23 true 0 255 0 128 0.0
+set_atom_image 1 0:0:160:0-0:0:166:18 true 0 96 128 255 0.0
+set_atom_image 1 0:0:167:0-0:0:171:9 true 0 255 0 128 0.0
+set_atom_image 1 0:0:172:0-0:0:173:13 true 0 96 128 255 0.0
+set_atom_image 1 0:0:174:0-0:0:176:9 true 0 255 255 255 0.0
+set_atom_image 1 0:0:177:0-0:0:182:13 true 0 255 0 128 0.0
+set_atom_image 1 0:0:183:0-0:0:184:18 true 0 96 128 255 0.0
+set_atom_image 1 0:0:185:0-0:0:185:16 true 0 255 255 255 0.0
+set_atom_image 1 0:0:186:0-0:0:186:13 true 0 96 128 255 0.0
+set_atom_image 1 0:0:187:0-0:0:189:21 true 0 255 255 255 0.0
+set_atom_image 1 0:0:190:0-0:0:190:9 true 0 255 200 0 0.0
+set_atom_image 1 0:0:191:0-0:0:193:13 true 0 255 255 255 0.0
+set_atom_image 1 0:0:194:0-0:0:195:23 true 0 96 128 255 0.0
+set_atom_image 1 0:0:196:0-0:0:196:11 true 0 255 255 255 0.0
+set_atom_image 1 0:0:197:0-0:0:198:23 true 0 96 128 255 0.0
+set_atom_image 1 0:0:199:0-0:0:200:18 true 0 255 255 255 0.0
+set_atom_image 1 0:0:201:0-0:0:201:18 true 0 255 200 0 0.0
+set_atom_image 1 0:0:202:0-0:0:208:15 true 0 255 255 255 0.0
+set_atom_image 1 0:0:209:0-0:0:210:6 true 0 96 128 255 0.0
+set_atom_image 1 0:0:211:0-0:0:213:13 true 0 255 255 255 0.0
+set_atom_image 1 0:0:214:0-0:0:214:18 true 0 96 128 255 0.0
+set_atom_image 1 0:0:215:0-0:0:221:13 true 0 255 0 128 0.0
+set_atom_image 1 0:0:222:0-0:0:223:21 true 0 96 128 255 0.0
+set_atom_image 1 0:0:224:0-0:0:235:21 true 0 255 0 128 0.0
+set_atom_image 1 0:0:236:0-0:0:239:6 true 0 255 255 255 0.0
+set_atom_image 1 0:0:240:0-0:0:240:18 true 0 255 200 0 0.0
+set_atom_image 1 0:0:241:0-0:0:241:10 true 0 255 255 255 0.0
+set_atom_image 1 0:0:242:0-0:0:242:16 true 0 96 128 255 0.0
+set_atom_image 1 0:0:243:0-0:0:247:23 true 0 255 0 128 0.0
+set_atom_image 1 0:0:248:0-0:0:249:18 true 0 96 128 255 0.0
+set_atom_image 1 0:0:250:0-0:0:256:16 true 0 255 0 128 0.0
+set_atom_image 1 0:0:257:0-0:0:257:21 true 0 96 128 255 0.0
+set_atom_image 1 0:0:258:0-0:0:269:13 true 0 255 0 128 0.0
+set_atom_image 1 0:0:270:0-0:0:273:15 true 0 96 128 255 0.0
+set_atom_image 1 0:0:274:0-0:0:274:16 true 0 255 255 255 0.0
+set_atom_image 1 0:0:275:0-0:0:277:13 true 0 96 128 255 0.0
+set_atom_image 1 0:0:278:0-0:0:279:23 true 0 255 255 255 0.0
+set_atom_image 1 0:0:280:0-0:0:280:10 true 0 96 128 255 0.0
+set_atom_image 1 0:0:281:0-0:0:281:13 true 0 255 255 255 0.0
+set_atom_image 1 0:0:282:0-0:0:282:10 true 0 255 200 0 0.0
+set_atom_image 1 0:0:283:0-0:0:283:18 true 0 96 128 255 0.0
+set_atom_image 1 0:0:284:0-0:0:287:18 true 0 255 0 128 0.0
+set_atom_image 1 0:0:288:0-0:0:288:10 true 0 255 255 255 0.0
+set_atom_image 1 0:0:289:0-0:0:289:13 true 0 96 128 255 0.0
+set_atom_image 1 0:0:290:0-0:0:293:15 true 0 255 0 128 0.0
+set_atom_image 1 0:0:294:0-0:0:296:18 true 0 96 128 255 0.0
+set_atom_image 1 0:0:297:0-0:0:297:18 true 0 255 255 255 0.0
+set_atom_image 1 0:0:298:0-0:0:299:20 true 0 96 128 255 0.0
+set_atom_image 1 0:0:300:0-0:0:302:18 true 0 255 0 128 0.0
+set_atom_image 1 0:0:303:0-0:0:303:18 true 0 255 255 255 0.0
+set_atom_image 1 0:0:304:0-0:0:309:18 true 0 255 0 128 0.0
+set_atom_image 1 0:0:310:0-0:0:311:13 true 0 255 255 255 0.0
+set_atom_image 1 0:0:312:0-0:0:313:10 true 0 96 128 255 0.0
+set_atom_image 1 0:0:314:0-0:0:319:16 true 0 255 0 128 0.0
+set_atom_image 1 0:0:320:0-0:0:324:9 true 0 96 128 255 0.0
+set_atom_image 1 0:0:325:0-0:0:327:13 true 0 255 255 255 0.0
+set_atom_image 1 0:0:328:0-0:0:329:14 true 0 96 128 255 0.0
+set_atom_image 1 0:0:330:0-0:0:338:13 true 0 255 0 128 0.0
+set_atom_image 1 0:0:339:0-0:0:339:21 true 0 96 128 255 0.0
+set_atom_image 1 0:0:340:0-0:0:340:15 true 0 255 255 255 0.0
+set_atom_image 1 0:0:341:0-0:0:345:11 true 0 255 200 0 0.0
+set_atom_image 1 0:0:346:0-0:0:346:10 true 0 255 255 255 0.0
+set_atom_image 1 0:0:347:0-0:0:347:10 true 0 96 128 255 0.0
+set_atom_image 1 0:0:348:0-0:0:350:21 true 0 255 0 128 0.0
+set_atom_image 1 0:0:351:0-0:0:352:9 true 0 255 255 255 0.0
+set_atom_image 1 0:0:353:0-0:0:356:19 true 0 255 0 128 0.0
+set_atom_image 1 0:0:357:0-0:0:358:11 true 0 96 128 255 0.0
+set_atom_image 1 0:0:359:0-0:0:365:18 true 0 255 0 128 0.0
+set_atom_image 1 0:0:366:0-0:0:368:13 true 0 96 128 255 0.0
+set_atom_image 1 0:0:369:0-0:0:373:18 true 0 255 200 0 0.0
+set_atom_image 1 0:0:374:0-0:0:379:21 true 0 255 255 255 0.0
+set_atom_image 1 0:0:380:0-0:0:383:21 true 0 96 128 255 0.0
+set_atom_image 1 0:0:384:0-0:0:389:13 true 0 255 255 255 0.0
+set_atom_image 1 0:0:390:0-0:0:390:6 true 0 96 128 255 0.0
+set_atom_image 1 0:0:391:0-0:0:393:13 true 0 255 255 255 0.0
+set_atom_image 1 0:0:394:0-0:0:395:21 true 0 96 128 255 0.0
+set_atom_image 1 0:0:396:0-0:0:403:23 true 0 255 255 255 0.0
+set_atom_image 1 0:0:404:0-0:0:404:21 true 0 96 128 255 0.0
+set_atom_image 1 0:0:405:0-0:0:406:12 true 0 255 255 255 0.0
+
+#Bonds
+select * & file = 1
+wireframe on
+set_bond_image 1 0:0-0:6700 true 0 -1 -1 -1 -1.0
+
+#Backbones
+
+#HBonds
+
+#Residues
+structure
+set_residue_image 1 0:0:0 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:1-0:0:12 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:13-0:0:18 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:19-0:0:28 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:29-0:0:33 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:34-0:0:37 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:38-0:0:52 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:53-0:0:56 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:57-0:0:64 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:65-0:0:70 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:71-0:0:72 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:73-0:0:79 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:80 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:81-0:0:87 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:88-0:0:98 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:99-0:0:106 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:107-0:0:109 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:110-0:0:112 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:113-0:0:154 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:155-0:0:159 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:160-0:0:166 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:167-0:0:171 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:172-0:0:176 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:177-0:0:182 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:183-0:0:189 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:190 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:191-0:0:200 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:201 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:202-0:0:214 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:215-0:0:221 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:222-0:0:223 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:224-0:0:235 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:236-0:0:239 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:240 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:241-0:0:242 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:243-0:0:247 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:248-0:0:249 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:250-0:0:256 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:257 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:258-0:0:269 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:270-0:0:281 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:282 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:283 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:284-0:0:287 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:288-0:0:289 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:290-0:0:293 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:294-0:0:299 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:300-0:0:302 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:303 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:304-0:0:309 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:310-0:0:313 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:314-0:0:319 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:320-0:0:329 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:330-0:0:338 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:339-0:0:340 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:341-0:0:345 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:346-0:0:347 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:348-0:0:350 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:351-0:0:352 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:353-0:0:356 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:357-0:0:358 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:359-0:0:365 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:366-0:0:368 true 4 -1 -1 -1 0.2 -1 -1 -1
+set_residue_image 1 0:0:369-0:0:373 true 2 -1 -1 -1 1.28 -1 -1 -1
+set_residue_image 1 0:0:374-0:0:406 true 4 -1 -1 -1 0.2 -1 -1 -1
+
+#Labels
+select *@2
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@3
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@4
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@5
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@6
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@7
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@8
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@9
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@10
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@11
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select all
+fselect all
