@@ -1,0 +1,195 @@
+  
+ ************************************************
+ *                                              *
+ *             psygene-G(17/10/06)              *
+ *                                              *
+ * Japan Biological Information Research Center *
+ *        Aomi 2-41-6, Koto-ku, Tokyo 135-0064  *
+ *                    JAPAN                     *
+ *                                              *
+ *              v0.933 : Oct 6, 2017.           *
+ *         space decomposition MD version       *
+ *                                              *
+ ************************************************
+  
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              SPACE INPUT starts.     +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ 
+ INFORMATION> SPACE DECOMPOSITION
+       BOUND X=  77.3820000  181.6450000
+             Y=  74.7750000  189.6100000
+             Z= 108.3980000  200.8370000
+ 
+       DIVISION X=        2
+                Y=        3
+                Z=        2
+ 
+       NUMBER OF CELLS=    12
+ 
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              GPU starts.             +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> GPU
+   GPU SERVICE TYPE      : gpu used                      
+   GPU PARAMETERS
+     USED DEVICE IDS     : 0
+     GPU KERNEL TYPE     : grid (spatial subdivision)    
+     GRID SQUARE SIZE    :    8.00000000000000     
+     GRID SCALING SIZE   :    1.10000000000000     
+     DOUBLE PRECISION KERNELS
+       INVOCATION        : double    
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              INPUT starts.           +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> INPUT FORMATTED TOPOLOGY FILE: Pro.tpl
+ WARNING: COORDINATE OUT OF CELL=   150.905000000000     
+   121.587000000000        200.837000000000     
+          ORIGINAL COORDINATE   =   150.905000000000     
+   121.587000000000        108.398000000000     
+          BOTTOM                =   77.3820000000000     
+   74.7750000000000        108.398000000000     
+          TOP                   =   181.645000000000     
+   189.610000000000        200.837000000000     
+          SIZE                  =   104.263000000000     
+   114.835000000000        92.4390000000000     
+ TOTAL SIZE=      106665 LODING SIZE=       15873
+ WARNING: COORDINATE OUT OF CELL=   150.905000000000     
+   121.587000000000        200.837000000000     
+          ORIGINAL COORDINATE   =   150.905000000000     
+   121.587000000000        108.398000000000     
+          BOTTOM                =   77.3820000000000     
+   74.7750000000000        108.398000000000     
+          TOP                   =   181.645000000000     
+   189.610000000000        200.837000000000     
+          SIZE                  =   104.263000000000     
+   114.835000000000        92.4390000000000     
+ TOTAL SIZE=      106665 LODING SIZE=       15873
+ WARNING: COORDINATE OUT OF CELL=   150.905000000000     
+   121.587000000000        200.837000000000     
+          ORIGINAL COORDINATE   =   150.905000000000     
+   121.587000000000        108.398000000000     
+          BOTTOM                =   77.3820000000000     
+   74.7750000000000        108.398000000000     
+          TOP                   =   181.645000000000     
+   189.610000000000        200.837000000000     
+          SIZE                  =   104.263000000000     
+   114.835000000000        92.4390000000000     
+ TOTAL SIZE=      106665 LODING SIZE=       15873
+ WARNING: COORDINATE OUT OF CELL=   150.905000000000     
+   121.587000000000        200.837000000000     
+          ORIGINAL COORDINATE   =   150.905000000000     
+   121.587000000000        108.398000000000     
+          BOTTOM                =   77.3820000000000     
+   74.7750000000000        108.398000000000     
+          TOP                   =   181.645000000000     
+   189.610000000000        200.837000000000     
+          SIZE                  =   104.263000000000     
+   114.835000000000        92.4390000000000     
+ TOTAL SIZE=      106665 LODING SIZE=       15873
+  
+      1) TOTAL NUMBER
+        NUMBER OF MOLECULES         :            4
+        NUMBER OF CHAINS            :        33475
+        NUMBER OF RESIDUES          :        33881
+        NUMBER OF ATOMS             :       106665
+        NUMBER OF BONDS             :       106527
+        NUMBER OF ANGLES            :        12171
+        NUMBER OF TORSIONS          :        24300
+        NUMBER OF IMPRO.            :         1246
+        MAXIMUM NUMBER OF FUNC.     :            1
+        MAXIMUM NUMBER OF ATOM-TYPE :           93
+  
+      2) EACH DATA
+         A) NUMBER OF CHAINS IN EACH MOLECULE 
+          MOLECULE            1    :            1
+          MOLECULE            2    :        33276
+          MOLECULE            3    :           92
+          MOLECULE            4    :          106
+         B) NUMBER OF ATOMS IN EACH MOLECULE 
+          MOLECULE            1    :         6639
+          MOLECULE            2    :            3
+          MOLECULE            3    :            1
+          MOLECULE            4    :            1
+         C) NUMBER OF BONDS IN EACH MOLECULE 
+          MOLECULE            1    :         6699
+          MOLECULE            2    :            3
+          MOLECULE            3    :            0
+          MOLECULE            4    :            0
+         D) NUMBER OF ANGLES IN EACH MOLECULE 
+          MOLECULE            1    :        12171
+          MOLECULE            2    :            0
+          MOLECULE            3    :            0
+          MOLECULE            4    :            0
+         E) NUMBER OF TORSIONS IN EACH MOLECULE 
+          MOLECULE            1    :        24300
+          MOLECULE            2    :            0
+          MOLECULE            3    :            0
+          MOLECULE            4    :            0
+         F) NUMBER OF IMPROPER IN EACH MOLECULE 
+          MOLECULE            1    :         1246
+          MOLECULE            2    :            0
+          MOLECULE            3    :            0
+          MOLECULE            4    :            0
+ INFORMATION> INPUT PDB FILE: all_prev.pdb
+ WARNING: COORDINATE OUT OF CELL=   150.905000000000     
+   121.587000000000        200.837000000000     
+          ORIGINAL COORDINATE   =   150.905000000000     
+   121.587000000000        108.398000000000     
+          BOTTOM                =   77.3820000000000     
+   74.7750000000000        108.398000000000     
+          TOP                   =   181.645000000000     
+   189.610000000000        200.837000000000     
+          SIZE                  =   104.263000000000     
+   114.835000000000        92.4390000000000     
+ TOTAL SIZE=      106665 LODING SIZE=       15873
+ WARNING: COORDINATE OUT OF CELL=   150.905000000000     
+   121.587000000000        200.837000000000     
+          ORIGINAL COORDINATE   =   150.905000000000     
+   121.587000000000        108.398000000000     
+          BOTTOM                =   77.3820000000000     
+   74.7750000000000        108.398000000000     
+          TOP                   =   181.645000000000     
+   189.610000000000        200.837000000000     
+          SIZE                  =   104.263000000000     
+   114.835000000000        92.4390000000000     
+ TOTAL SIZE=      106665 LODING SIZE=       15873
+ WARNING: COORDINATE OUT OF CELL=   150.905000000000     
+   121.587000000000        200.837000000000     
+          ORIGINAL COORDINATE   =   150.905000000000     
+   121.587000000000        108.398000000000     
+          BOTTOM                =   77.3820000000000     
+   74.7750000000000        108.398000000000     
+          TOP                   =   181.645000000000     
+   189.610000000000        200.837000000000     
+          SIZE                  =   104.263000000000     
+   114.835000000000        92.4390000000000     
+ TOTAL SIZE=      106665 LODING SIZE=       15873
+ WARNING: COORDINATE OUT OF CELL=   150.905000000000     
+   121.587000000000        200.837000000000     
+          ORIGINAL COORDINATE   =   150.905000000000     
+   121.587000000000        108.398000000000     
+          BOTTOM                =   77.3820000000000     
+   74.7750000000000        108.398000000000     
+          TOP                   =   181.645000000000     
+   189.610000000000        200.837000000000     
+          SIZE                  =   104.263000000000     
+   114.835000000000        92.4390000000000     
+ TOTAL SIZE=      106665 LODING SIZE=       15873
+ -------------------------------------------------------------------------------
+ Error!! : PDB ATOM NUMBER NOT ENOUGH

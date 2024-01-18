@@ -1,0 +1,26 @@
+select *@1
+wireframe off
+color structure
+cartoon
+ssbond 0.1
+color ssbonds yellow
+select *@2
+wireframe off
+color cpk
+wireframe 0.0
+ssbond 0.1
+color ssbonds yellow
+select *@3
+wireframe off
+color cpk
+spacefill
+ssbond 0.1
+color ssbonds yellow
+select *@4
+wireframe off
+color cpk
+spacefill
+ssbond 0.1
+color ssbonds yellow
+select all
+fselect all
