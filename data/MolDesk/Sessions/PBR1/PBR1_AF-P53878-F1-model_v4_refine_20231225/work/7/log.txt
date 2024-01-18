@@ -1,0 +1,430 @@
+  
+ ************************************************
+ *                                              *
+ *             psygene-G(17/10/06)              *
+ *                                              *
+ * Japan Biological Information Research Center *
+ *        Aomi 2-41-6, Koto-ku, Tokyo 135-0064  *
+ *                    JAPAN                     *
+ *                                              *
+ *              v0.933 : Oct 6, 2017.           *
+ *         space decomposition MD version       *
+ *                                              *
+ ************************************************
+  
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              SPACE INPUT starts.     +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ 
+ INFORMATION> SPACE DECOMPOSITION
+       BOUND X=-105.1620000  -13.0660000
+             Y= -34.4000000   41.3690000
+             Z= -89.9570000   29.3430000
+ 
+       DIVISION X=        2
+                Y=        2
+                Z=        3
+ 
+       NUMBER OF CELLS=    12
+ 
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              GPU starts.             +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> GPU
+   GPU SERVICE TYPE      : gpu used                      
+   GPU PARAMETERS
+     USED DEVICE IDS     : 0
+     GPU KERNEL TYPE     : grid (spatial subdivision)    
+     GRID SQUARE SIZE    :    8.00000000000000     
+     GRID SCALING SIZE   :    1.10000000000000     
+     DOUBLE PRECISION KERNELS
+       INVOCATION        : double    
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              INPUT starts.           +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> INPUT FORMATTED TOPOLOGY FILE: Pro.tpl
+  
+      1) TOTAL NUMBER
+        NUMBER OF MOLECULES         :            4
+        NUMBER OF CHAINS            :        24449
+        NUMBER OF RESIDUES          :        24855
+        NUMBER OF ATOMS             :        79687
+        NUMBER OF BONDS             :        79599
+        NUMBER OF ANGLES            :        12171
+        NUMBER OF TORSIONS          :        24300
+        NUMBER OF IMPRO.            :         1246
+        MAXIMUM NUMBER OF FUNC.     :            1
+        MAXIMUM NUMBER OF ATOM-TYPE :           93
+  
+      2) EACH DATA
+         A) NUMBER OF CHAINS IN EACH MOLECULE 
+          MOLECULE            1    :            1
+          MOLECULE            2    :        24300
+          MOLECULE            3    :           67
+          MOLECULE            4    :           81
+         B) NUMBER OF ATOMS IN EACH MOLECULE 
+          MOLECULE            1    :         6639
+          MOLECULE            2    :            3
+          MOLECULE            3    :            1
+          MOLECULE            4    :            1
+         C) NUMBER OF BONDS IN EACH MOLECULE 
+          MOLECULE            1    :         6699
+          MOLECULE            2    :            3
+          MOLECULE            3    :            0
+          MOLECULE            4    :            0
+         D) NUMBER OF ANGLES IN EACH MOLECULE 
+          MOLECULE            1    :        12171
+          MOLECULE            2    :            0
+          MOLECULE            3    :            0
+          MOLECULE            4    :            0
+         E) NUMBER OF TORSIONS IN EACH MOLECULE 
+          MOLECULE            1    :        24300
+          MOLECULE            2    :            0
+          MOLECULE            3    :            0
+          MOLECULE            4    :            0
+         F) NUMBER OF IMPROPER IN EACH MOLECULE 
+          MOLECULE            1    :         1246
+          MOLECULE            2    :            0
+          MOLECULE            3    :            0
+          MOLECULE            4    :            0
+ INFORMATION> INPUT PDB FILE: all_prev.pdb
+ INFORMATION> REFERENCE PDB FILE: all_prev.pdb
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              MINI starts.            +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+       PARAMETERS FOR MINIMIZATION 
+  
+       1) GENERAL PARAMETERS  
+          METHOD          : steep     
+          CPU LIMIT (S)   :   0.000000000000000E+000
+          LOOP LIMIT      :         5000
+          MONITORING LOG    :          100
+          LOG FORMAT        : short  
+          CALC. OF RMSD     : false           
+          CONVERGE (RMSF)   :   0.100000000000000     
+          INITIAL STEP(A)   :   1.000000000000000E-002
+          UP RATE           :    1.20000000000000     
+          DOWN RATE         :   0.600000000000000     
+       2) ANALYSIS FILE 
+          LOGICAL UNIT      :           30
+          CLOSE             :  F
+       3) PARAMETERS FOR ENERGY CALCULATION 
+          POTENTIAL FUNC. : AMBER
+          CUT-OFF LOGIC   : ATOM BASE CUTOFF
+          CUT-OFF DIST.        :    16.0000000000000     
+          ZERO-MULITPOLE    : zero-quadrupole 
+          DIELECTRIC IS DEPEND DISTANCE: false           
+          DIELECTRIC VAL. :    1.00000000000000     
+          APPLY PERIODIC BOUNDARY
+           X AXIS           :    92.0960000000000     
+           Y AXIS           :    75.7690000000000     
+           Z AXIS           :    119.300000000000     
+          CENTER OF BOX IS INPUT
+           X AXIS           :   -59.1140000000000     
+           Y AXIS           :    3.48450000000000     
+           Z AXIS           :   -30.3070000000000     
+ INFORMATION> ZERO-MULTIPOLE SUMMANTION
+   ALPHA (EWAPRM)        :  0.000000000000000E+000
+   ZERO-MULTIPOLE
+     POLE NUMBER         :            4
+  
+ INFORMATION> MINI for psygene-G(17/10/06) 
+      ENERGY MINIMIZATION 
+  
+ INFORMATION> GPU
+   START GPU INITIALIZATION
+   MAX IDEAL ATOM NUMBER:
+   CELL ATOMS = 11604 CELL + REF ATOMS = 65480
+   GPU ALLOCATION BY MPI
+   GPU DEVICE DETECTION:
+     RANK = 0 NODE = molspace DEVICE = 0
+     RANK = 1 NODE = molspace DEVICE = 0
+     RANK = 2 NODE = molspace DEVICE = 0
+     RANK = 3 NODE = molspace DEVICE = 0
+     RANK = 4 NODE = molspace DEVICE = 0
+     RANK = 5 NODE = molspace DEVICE = 0
+     RANK = 6 NODE = molspace DEVICE = 0
+     RANK = 7 NODE = molspace DEVICE = 0
+     READY DEVICES: RANK =            5
+     READY DEVICES: RANK =            7
+     READY DEVICES: RANK =            3
+     READY DEVICES: RANK =            0
+     READY DEVICES: RANK =            1
+     READY DEVICES: RANK =            6
+     READY DEVICES: RANK =            4
+   END GPU INITIALIZATION
+     READY DEVICES: RANK =            2
+     CPU TIME FOR ENERGY   :       0.1169 (S) 
+  
+ INFORMATION> MINI 
+     ENERGY OF INITIAL STRUCTURE 
+  
+      LOOP       :            0
+       TOTAL     :   21299708.7499921     
+       BOND      :   23741.7675994621     
+       ANGLE     :   985.347273750956     
+       TORS.     :   3753.37032219520     
+       IMPRO.    :   24.1501822571815     
+       VDW14     :   1912.46053749270     
+       ELE14     :   16941.9915145745     
+       VDW15     :   21582915.2147614     
+       ELE15     :  -330565.552199074     
+       CAP       :  0.000000000000000E+000
+       PSR       :  0.000000000000000E+000
+       DSR       :  0.000000000000000E+000
+       DHR       :  0.000000000000000E+000
+ 
+      RMSF       :    71660.3480976414     
+      MAX FORCE  :    5906399.97431601        CHAIN        14367  WAT     
+       14773  O   
+  
+    DISTRIBUTION OF FORCE  (KCAL/(MOL*A)) 
+      1.0D+3 <=                      1168
+      1.0D+2 <=    < 1.0D+3           898
+      1.0D+1 <=    < 1.0D+2         53669
+      1.0D0  <=    < 1.0D+1         23795
+      1.0D-1 <=    < 1.0D0            157
+      1.0D-2 <=    < 1.0D-1             0
+      1.0D-3 <=    < 1.0D-2             0
+                   < 1.0D-3             0
+    
+  
+ INFORMATION> steep     
+              LOOP START 
+ 
+  LOOP NUMBER      :             100  POTENTIAL        :  -0.2933827E+06
+  R.M.S.F.         :   0.3859528E+01
+ 
+  LOOP NUMBER      :             200  POTENTIAL        :  -0.3040434E+06
+  R.M.S.F.         :   0.3014690E+01
+ 
+  LOOP NUMBER      :             300  POTENTIAL        :  -0.3100493E+06
+  R.M.S.F.         :   0.9758182E+00
+ 
+  LOOP NUMBER      :             400  POTENTIAL        :  -0.3141289E+06
+  R.M.S.F.         :   0.2507376E+01
+ 
+  LOOP NUMBER      :             500  POTENTIAL        :  -0.3173072E+06
+  R.M.S.F.         :   0.6639410E+00
+ 
+  LOOP NUMBER      :             600  POTENTIAL        :  -0.3197678E+06
+  R.M.S.F.         :   0.1975193E+01
+ 
+  LOOP NUMBER      :             700  POTENTIAL        :  -0.3218594E+06
+  R.M.S.F.         :   0.1870048E+01
+ 
+  LOOP NUMBER      :             800  POTENTIAL        :  -0.3236039E+06
+  R.M.S.F.         :   0.8398678E+00
+ 
+  LOOP NUMBER      :             900  POTENTIAL        :  -0.3251061E+06
+  R.M.S.F.         :   0.1332391E+01
+ 
+  LOOP NUMBER      :            1000  POTENTIAL        :  -0.3263919E+06
+  R.M.S.F.         :   0.4751619E+00
+ 
+  LOOP NUMBER      :            1100  POTENTIAL        :  -0.3275264E+06
+  R.M.S.F.         :   0.1265572E+01
+ 
+  LOOP NUMBER      :            1200  POTENTIAL        :  -0.3285163E+06
+  R.M.S.F.         :   0.4233833E+00
+ 
+  LOOP NUMBER      :            1300  POTENTIAL        :  -0.3293651E+06
+  R.M.S.F.         :   0.7592151E+00
+ 
+  LOOP NUMBER      :            1400  POTENTIAL        :  -0.3301273E+06
+  R.M.S.F.         :   0.3342664E+00
+ 
+  LOOP NUMBER      :            1500  POTENTIAL        :  -0.3308369E+06
+  R.M.S.F.         :   0.3630100E+00
+ 
+  LOOP NUMBER      :            1600  POTENTIAL        :  -0.3314631E+06
+  R.M.S.F.         :   0.9953027E+00
+ 
+  LOOP NUMBER      :            1700  POTENTIAL        :  -0.3320374E+06
+  R.M.S.F.         :   0.3128741E+00
+ 
+  LOOP NUMBER      :            1800  POTENTIAL        :  -0.3325521E+06
+  R.M.S.F.         :   0.3379939E+00
+ 
+  LOOP NUMBER      :            1900  POTENTIAL        :  -0.3330366E+06
+  R.M.S.F.         :   0.7367630E+00
+ 
+  LOOP NUMBER      :            2000  POTENTIAL        :  -0.3334915E+06
+  R.M.S.F.         :   0.2701516E+00
+ 
+  LOOP NUMBER      :            2100  POTENTIAL        :  -0.3338968E+06
+  R.M.S.F.         :   0.4102091E+00
+ 
+  LOOP NUMBER      :            2200  POTENTIAL        :  -0.3342706E+06
+  R.M.S.F.         :   0.8148150E+00
+ 
+  LOOP NUMBER      :            2300  POTENTIAL        :  -0.3346244E+06
+  R.M.S.F.         :   0.1027704E+01
+ 
+  LOOP NUMBER      :            2400  POTENTIAL        :  -0.3349684E+06
+  R.M.S.F.         :   0.3295627E+00
+ 
+  LOOP NUMBER      :            2500  POTENTIAL        :  -0.3352820E+06
+  R.M.S.F.         :   0.8477959E+00
+ 
+  LOOP NUMBER      :            2600  POTENTIAL        :  -0.3355798E+06
+  R.M.S.F.         :   0.2063826E+00
+ 
+  LOOP NUMBER      :            2700  POTENTIAL        :  -0.3358498E+06
+  R.M.S.F.         :   0.8801056E+00
+ 
+  LOOP NUMBER      :            2800  POTENTIAL        :  -0.3361223E+06
+  R.M.S.F.         :   0.7609832E+00
+ 
+  LOOP NUMBER      :            2900  POTENTIAL        :  -0.3363838E+06
+  R.M.S.F.         :   0.2032872E+00
+ 
+  LOOP NUMBER      :            3000  POTENTIAL        :  -0.3366215E+06
+  R.M.S.F.         :   0.3039041E+00
+ 
+  LOOP NUMBER      :            3100  POTENTIAL        :  -0.3368464E+06
+  R.M.S.F.         :   0.1859858E+00
+ 
+  LOOP NUMBER      :            3200  POTENTIAL        :  -0.3370636E+06
+  R.M.S.F.         :   0.1940011E+00
+ 
+  LOOP NUMBER      :            3300  POTENTIAL        :  -0.3372806E+06
+  R.M.S.F.         :   0.1939532E+00
+ 
+  LOOP NUMBER      :            3400  POTENTIAL        :  -0.3374821E+06
+  R.M.S.F.         :   0.1794759E+00
+ 
+  LOOP NUMBER      :            3500  POTENTIAL        :  -0.3376680E+06
+  R.M.S.F.         :   0.6844741E+00
+ 
+  LOOP NUMBER      :            3600  POTENTIAL        :  -0.3378599E+06
+  R.M.S.F.         :   0.2665738E+00
+ 
+  LOOP NUMBER      :            3700  POTENTIAL        :  -0.3380323E+06
+  R.M.S.F.         :   0.7031795E+00
+ 
+  LOOP NUMBER      :            3800  POTENTIAL        :  -0.3382077E+06
+  R.M.S.F.         :   0.1603906E+00
+ 
+  LOOP NUMBER      :            3900  POTENTIAL        :  -0.3383696E+06
+  R.M.S.F.         :   0.2617015E+00
+ 
+  LOOP NUMBER      :            4000  POTENTIAL        :  -0.3385246E+06
+  R.M.S.F.         :   0.6456437E+00
+ 
+  LOOP NUMBER      :            4100  POTENTIAL        :  -0.3386752E+06
+  R.M.S.F.         :   0.2145163E+00
+ 
+  LOOP NUMBER      :            4200  POTENTIAL        :  -0.3388130E+06
+  R.M.S.F.         :   0.2880776E+00
+ 
+  LOOP NUMBER      :            4300  POTENTIAL        :  -0.3389488E+06
+  R.M.S.F.         :   0.5731685E+00
+ 
+  LOOP NUMBER      :            4400  POTENTIAL        :  -0.3390856E+06
+  R.M.S.F.         :   0.1545771E+00
+ 
+  LOOP NUMBER      :            4500  POTENTIAL        :  -0.3392111E+06
+  R.M.S.F.         :   0.4453118E+00
+ 
+  LOOP NUMBER      :            4600  POTENTIAL        :  -0.3393355E+06
+  R.M.S.F.         :   0.1348752E+00
+ 
+  LOOP NUMBER      :            4700  POTENTIAL        :  -0.3394544E+06
+  R.M.S.F.         :   0.1368485E+00
+ 
+  LOOP NUMBER      :            4800  POTENTIAL        :  -0.3395736E+06
+  R.M.S.F.         :   0.3596114E+00
+ 
+  LOOP NUMBER      :            4900  POTENTIAL        :  -0.3396981E+06
+  R.M.S.F.         :   0.4899585E+00
+ 
+  LOOP NUMBER      :            5000  POTENTIAL        :  -0.3398227E+06
+  R.M.S.F.         :   0.1332852E+00
+ minimum force =  0.131405747657362      step =        4951
+ -------------------------------------------------------------------------------
+ Warning! : minimize: steep is not converged with in loop
+ -------------------------------------------------------------------------------
+  
+ INFORMATION> MINI 
+     ENERGY OF FINAL STRUCTURE 
+  
+      LOOP       :         5000
+       TOTAL     :  -339822.728002893     
+       BOND      :   26034.8164171553     
+       ANGLE     :   711.628362899088     
+       TORS.     :   3821.74093540753     
+       IMPRO.    :   46.6288733787921     
+       VDW14     :   1309.86793356965     
+       ELE14     :   16042.7776257181     
+       VDW15     :   60777.0618840056     
+       ELE15     :  -448567.250035027     
+       CAP       :  0.000000000000000E+000
+       PSR       :  0.000000000000000E+000
+       DSR       :  0.000000000000000E+000
+       DHR       :  0.000000000000000E+000
+ 
+      RMSF       :   0.133285225289328     
+      MAX FORCE  :    4.99469401066801        CHAIN            1  GLU-    
+         330  CD  
+  
+    DISTRIBUTION OF FORCE  (KCAL/(MOL*A)) 
+      1.0D+3 <=                         0
+      1.0D+2 <=    < 1.0D+3             0
+      1.0D+1 <=    < 1.0D+2             0
+      1.0D0  <=    < 1.0D+1            93
+      1.0D-1 <=    < 1.0D0          23631
+      1.0D-2 <=    < 1.0D-1         55585
+      1.0D-3 <=    < 1.0D-2           377
+                   < 1.0D-3             1
+    
+ INFORMATION> GPU
+   START CLEANUP GPGPU
+   END CLEANUP GPGPU
+  
+ INFORMATION> MINI 
+            TOTAL CPU TIME (S)  :       527.61058
+              MINI LOOP         :       525.85069
+              OTHER             :         1.75989
+
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +              OUTPUT starts.          +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+  
+     CPU TIME FOR OUTPDB   :       0.1811 (S) 
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> psygene-G(17/10/06)     +
+ +       Job has finished.              +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+  
+ TIME FOR TOTAL   529.681227922440     
+  

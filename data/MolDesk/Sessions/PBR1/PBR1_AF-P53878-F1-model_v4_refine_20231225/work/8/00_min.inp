@@ -1,0 +1,46 @@
+EXE> SPACEINPUT
+     LXCELL= 92.096 LYCELL= 75.769 LZCELL= 119.3
+     CENTRX= -59.114 CENTRY= 3.4845 CENTRZ= -30.307
+     DXCELL= 2
+     DYCELL= 2
+     DZCELL= 3
+     QUIT
+
+EXE> GPU
+     GPUALC= MPI
+     USEDEV= 0
+     NBDSRV= GPU          NBDKNL= GRID       NBDPRE= DBL
+     NBDBSP= NOCA
+     GRDSPC= 8.0 GRDSCL= 1.10D0
+     QUIT
+
+EXE> INPUT
+     TOPOLO= FORM NAMETO= Pro.tpl
+     COORDI= PDB  NAMECO= all_prev.pdb
+     REFCOO= PDB  NAMERE= all_prev.pdb
+     QUIT
+
+EXE> MINI
+     METHOD=  CONJ
+     CPUTIM=  360000000.0
+     LOOPLI= 5000 UPDATE=     20
+     MONITO=    100       CONVGR=     0.1D0
+     CUTMET=  RESC        CUTLEN= 16.0
+     DIEFUN=  CONST       DIEVAL=     1.0D0
+     LXCELL= 92.096 LYCELL= 75.769 LZCELL= 119.3
+     CENTRX= -59.114 CENTRY= 3.4845 CENTRZ= -30.307
+
+     CALZMM= ZQUA        EWAPRM=     0.0d0
+
+
+     CALV15=     CALC       CALE15=   CALC
+     CALHYD=     NOCALC
+     CALV5N=     NOCALC     CALE5N=   NOCALC
+     CALH5N=     NOCALC
+     QUIT
+
+EXE> OUTPUT
+     COORDI=  PDB     NAMECO= Pro.pdb
+     QUIT
+EXE> END
+
