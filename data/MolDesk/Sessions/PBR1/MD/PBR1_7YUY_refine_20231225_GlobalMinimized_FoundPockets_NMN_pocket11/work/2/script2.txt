@@ -1,0 +1,485 @@
+## Initialize
+zap
+set hetero on
+set hydrogen on
+set bondmode and
+set background [0,0,0]
+set drawlevel 16
+set loadcenter off
+set ambient 33.0
+set diffuse1 50.0
+set diffuse2 25.0
+set diffuse1_direction [-1.0,-1.0,-1.0]
+set diffuse2_direction [1.0,-1.0,-1.0]
+set label 1
+
+## File 1
+fselect 1
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [108.707,57.704,97.076004]
+
+#Atoms
+select * & file = 1
+color cpk
+spacefill off
+displayatom on
+set_atom_image 1 0:0:0:0-0:0:0:18 true 1 255 255 255 -1
+set_atom_image 1 0:0:1:0-0:0:12:6 true 1 255 0 128 -1
+set_atom_image 1 0:0:13:0-0:0:13:13 true 1 255 255 255 -1
+set_atom_image 1 0:0:14:0-0:0:18:20 true 1 96 128 255 -1
+set_atom_image 1 0:0:19:0-0:0:28:20 true 1 255 0 128 -1
+set_atom_image 1 0:0:29:0-0:0:33:6 true 1 96 128 255 -1
+set_atom_image 1 0:0:34:0-0:0:37:20 true 1 255 0 128 -1
+set_atom_image 1 0:0:38:0-0:0:40:23 true 1 96 128 255 -1
+set_atom_image 1 0:0:41:0-0:0:43:10 true 1 255 255 255 -1
+set_atom_image 1 0:0:44:0-0:0:45:13 true 1 96 128 255 -1
+set_atom_image 1 0:0:46:0-0:0:49:21 true 1 255 255 255 -1
+set_atom_image 1 0:0:50:0-0:0:51:16 true 1 96 128 255 -1
+set_atom_image 1 0:0:52:0-0:0:52:6 true 1 255 255 255 -1
+set_atom_image 1 0:0:53:0-0:0:56:18 true 1 255 0 128 -1
+set_atom_image 1 0:0:57:0-0:0:59:6 true 1 96 128 255 -1
+set_atom_image 1 0:0:60:0-0:0:63:16 true 1 255 255 255 -1
+set_atom_image 1 0:0:64:0-0:0:64:6 true 1 96 128 255 -1
+set_atom_image 1 0:0:65:0-0:0:70:9 true 1 255 0 128 -1
+set_atom_image 1 0:0:71:0-0:0:72:21 true 1 255 255 255 -1
+set_atom_image 1 0:0:73:0-0:0:79:16 true 1 255 0 128 -1
+set_atom_image 1 0:0:80:0-0:0:80:18 true 1 96 128 255 -1
+set_atom_image 1 0:0:81:0-0:0:87:15 true 1 255 0 128 -1
+set_atom_image 1 0:0:88:0-0:0:92:13 true 1 96 128 255 -1
+set_atom_image 1 0:0:93:0-0:0:93:14 true 1 255 255 255 -1
+set_atom_image 1 0:0:94:0-0:0:94:23 true 1 96 128 255 -1
+set_atom_image 1 0:0:95:0-0:0:96:14 true 1 255 255 255 -1
+set_atom_image 1 0:0:97:0-0:0:97:14 true 1 96 128 255 -1
+set_atom_image 1 0:0:98:0-0:0:98:18 true 1 255 255 255 -1
+set_atom_image 1 0:0:99:0-0:0:106:18 true 1 255 0 128 -1
+set_atom_image 1 0:0:107:0-0:0:107:18 true 1 96 128 255 -1
+set_atom_image 1 0:0:108:0-0:0:108:19 true 1 255 255 255 -1
+set_atom_image 1 0:0:109:0-0:0:109:15 true 1 96 128 255 -1
+set_atom_image 1 0:0:110:0-0:0:112:10 true 1 255 0 128 -1
+set_atom_image 1 0:0:113:0-0:0:113:11 true 1 96 128 255 -1
+set_atom_image 1 0:0:114:0-0:0:114:18 true 1 255 255 255 -1
+set_atom_image 1 0:0:115:0-0:0:119:14 true 1 96 128 255 -1
+set_atom_image 1 0:0:120:0-0:0:126:10 true 1 255 255 255 -1
+set_atom_image 1 0:0:127:0-0:0:128:18 true 1 96 128 255 -1
+set_atom_image 1 0:0:129:0-0:0:132:13 true 1 255 255 255 -1
+set_atom_image 1 0:0:133:0-0:0:141:15 true 1 96 128 255 -1
+set_atom_image 1 0:0:142:0-0:0:143:10 true 1 255 255 255 -1
+set_atom_image 1 0:0:144:0-0:0:144:6 true 1 96 128 255 -1
+set_atom_image 1 0:0:145:0-0:0:145:11 true 1 255 255 255 -1
+set_atom_image 1 0:0:146:0-0:0:147:14 true 1 96 128 255 -1
+set_atom_image 1 0:0:148:0-0:0:151:18 true 1 255 255 255 -1
+set_atom_image 1 0:0:152:0-0:0:154:18 true 1 96 128 255 -1
+set_atom_image 1 0:0:155:0-0:0:159:23 true 1 255 0 128 -1
+set_atom_image 1 0:0:160:0-0:0:166:18 true 1 96 128 255 -1
+set_atom_image 1 0:0:167:0-0:0:171:9 true 1 255 0 128 -1
+set_atom_image 1 0:0:172:0-0:0:173:13 true 1 96 128 255 -1
+set_atom_image 1 0:0:174:0-0:0:176:9 true 1 255 255 255 -1
+set_atom_image 1 0:0:177:0-0:0:182:13 true 1 255 0 128 -1
+set_atom_image 1 0:0:183:0-0:0:184:18 true 1 96 128 255 -1
+set_atom_image 1 0:0:185:0-0:0:185:16 true 1 255 255 255 -1
+set_atom_image 1 0:0:186:0-0:0:186:13 true 1 96 128 255 -1
+set_atom_image 1 0:0:187:0-0:0:189:21 true 1 255 255 255 -1
+set_atom_image 1 0:0:190:0-0:0:190:9 true 1 255 200 0 -1
+set_atom_image 1 0:0:191:0-0:0:193:13 true 1 255 255 255 -1
+set_atom_image 1 0:0:194:0-0:0:195:23 true 1 96 128 255 -1
+set_atom_image 1 0:0:196:0-0:0:196:11 true 1 255 255 255 -1
+set_atom_image 1 0:0:197:0-0:0:198:23 true 1 96 128 255 -1
+set_atom_image 1 0:0:199:0-0:0:200:18 true 1 255 255 255 -1
+set_atom_image 1 0:0:201:0-0:0:201:18 true 1 255 200 0 -1
+set_atom_image 1 0:0:202:0-0:0:208:15 true 1 255 255 255 -1
+set_atom_image 1 0:0:209:0-0:0:210:6 true 1 96 128 255 -1
+set_atom_image 1 0:0:211:0-0:0:213:13 true 1 255 255 255 -1
+set_atom_image 1 0:0:214:0-0:0:214:18 true 1 96 128 255 -1
+set_atom_image 1 0:0:215:0-0:0:221:13 true 1 255 0 128 -1
+set_atom_image 1 0:0:222:0-0:0:223:21 true 1 96 128 255 -1
+set_atom_image 1 0:0:224:0-0:0:235:21 true 1 255 0 128 -1
+set_atom_image 1 0:0:236:0-0:0:239:6 true 1 255 255 255 -1
+set_atom_image 1 0:0:240:0-0:0:240:18 true 1 255 200 0 -1
+set_atom_image 1 0:0:241:0-0:0:241:10 true 1 255 255 255 -1
+set_atom_image 1 0:0:242:0-0:0:242:16 true 1 96 128 255 -1
+set_atom_image 1 0:0:243:0-0:0:247:23 true 1 255 0 128 -1
+set_atom_image 1 0:0:248:0-0:0:249:18 true 1 96 128 255 -1
+set_atom_image 1 0:0:250:0-0:0:256:16 true 1 255 0 128 -1
+set_atom_image 1 0:0:257:0-0:0:257:21 true 1 96 128 255 -1
+set_atom_image 1 0:0:258:0-0:0:269:13 true 1 255 0 128 -1
+set_atom_image 1 0:0:270:0-0:0:273:15 true 1 96 128 255 -1
+set_atom_image 1 0:0:274:0-0:0:274:16 true 1 255 255 255 -1
+set_atom_image 1 0:0:275:0-0:0:277:13 true 1 96 128 255 -1
+set_atom_image 1 0:0:278:0-0:0:279:23 true 1 255 255 255 -1
+set_atom_image 1 0:0:280:0-0:0:280:10 true 1 96 128 255 -1
+set_atom_image 1 0:0:281:0-0:0:281:13 true 1 255 255 255 -1
+set_atom_image 1 0:0:282:0-0:0:282:10 true 1 255 200 0 -1
+set_atom_image 1 0:0:283:0-0:0:283:18 true 1 96 128 255 -1
+set_atom_image 1 0:0:284:0-0:0:287:18 true 1 255 0 128 -1
+set_atom_image 1 0:0:288:0-0:0:288:10 true 1 255 255 255 -1
+set_atom_image 1 0:0:289:0-0:0:289:13 true 1 96 128 255 -1
+set_atom_image 1 0:0:290:0-0:0:293:15 true 1 255 0 128 -1
+set_atom_image 1 0:0:294:0-0:0:296:18 true 1 96 128 255 -1
+set_atom_image 1 0:0:297:0-0:0:297:18 true 1 255 255 255 -1
+set_atom_image 1 0:0:298:0-0:0:299:20 true 1 96 128 255 -1
+set_atom_image 1 0:0:300:0-0:0:302:18 true 1 255 0 128 -1
+set_atom_image 1 0:0:303:0-0:0:303:18 true 1 255 255 255 -1
+set_atom_image 1 0:0:304:0-0:0:309:18 true 1 255 0 128 -1
+set_atom_image 1 0:0:310:0-0:0:311:13 true 1 255 255 255 -1
+set_atom_image 1 0:0:312:0-0:0:313:10 true 1 96 128 255 -1
+set_atom_image 1 0:0:314:0-0:0:319:16 true 1 255 0 128 -1
+set_atom_image 1 0:0:320:0-0:0:324:9 true 1 96 128 255 -1
+set_atom_image 1 0:0:325:0-0:0:327:13 true 1 255 255 255 -1
+set_atom_image 1 0:0:328:0-0:0:329:14 true 1 96 128 255 -1
+set_atom_image 1 0:0:330:0-0:0:338:13 true 1 255 0 128 -1
+set_atom_image 1 0:0:339:0-0:0:339:21 true 1 96 128 255 -1
+set_atom_image 1 0:0:340:0-0:0:340:15 true 1 255 255 255 -1
+set_atom_image 1 0:0:341:0-0:0:345:11 true 1 255 200 0 -1
+set_atom_image 1 0:0:346:0-0:0:346:10 true 1 255 255 255 -1
+set_atom_image 1 0:0:347:0-0:0:347:10 true 1 96 128 255 -1
+set_atom_image 1 0:0:348:0-0:0:350:21 true 1 255 0 128 -1
+set_atom_image 1 0:0:351:0-0:0:352:9 true 1 255 255 255 -1
+set_atom_image 1 0:0:353:0-0:0:356:19 true 1 255 0 128 -1
+set_atom_image 1 0:0:357:0-0:0:358:11 true 1 96 128 255 -1
+set_atom_image 1 0:0:359:0-0:0:365:18 true 1 255 0 128 -1
+set_atom_image 1 0:0:366:0-0:0:368:13 true 1 96 128 255 -1
+set_atom_image 1 0:0:369:0-0:0:373:18 true 1 255 200 0 -1
+set_atom_image 1 0:0:374:0-0:0:379:21 true 1 255 255 255 -1
+set_atom_image 1 0:0:380:0-0:0:383:21 true 1 96 128 255 -1
+set_atom_image 1 0:0:384:0-0:0:389:13 true 1 255 255 255 -1
+set_atom_image 1 0:0:390:0-0:0:390:6 true 1 96 128 255 -1
+set_atom_image 1 0:0:391:0-0:0:393:13 true 1 255 255 255 -1
+set_atom_image 1 0:0:394:0-0:0:395:21 true 1 96 128 255 -1
+set_atom_image 1 0:0:396:0-0:0:403:23 true 1 255 255 255 -1
+set_atom_image 1 0:0:404:0-0:0:404:21 true 1 96 128 255 -1
+set_atom_image 1 0:0:405:0-0:0:406:12 true 1 255 255 255 -1
+
+#Bonds
+select * & file = 1
+wireframe on
+set_bond_image 1 0:0-0:6700 true 0 -1 -1 -1 -1.0
+
+#Labels
+
+## File 2
+fselect 2
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [120.300995,46.6535,96.609]
+
+#Atoms
+select * & file = 2
+color cpk
+spacefill off
+displayatom on
+set_atom_image 2 0:0:0:0-0:0:0:13 true 1 -1 -1 -1 0.3
+
+#Bonds
+select * & file = 2
+wireframe on
+set_bond_image 2 0:0-0:14 true 1 -1 -1 -1 1.0E-4
+
+#Labels
+
+## File 3
+fselect 3
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [124.6125,48.734497,82.466]
+
+#Atoms
+select * & file = 3
+color cpk
+spacefill off
+displayatom on
+set_atom_image 3 0:0:0:0-0:0:0:20 true 1 -1 -1 -1 0.3
+
+#Bonds
+select * & file = 3
+wireframe on
+set_bond_image 3 0:0-0:28 true 1 -1 -1 -1 1.0E-4
+
+#Labels
+
+## File 4
+fselect 4
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [120.51199,35.4075,99.35651]
+
+#Atoms
+select * & file = 4
+color cpk
+spacefill off
+displayatom on
+set_atom_image 4 0:0:0:0-0:0:0:11 true 1 -1 -1 -1 0.3
+
+#Bonds
+select * & file = 4
+wireframe on
+set_bond_image 4 0:0-0:15 true 1 -1 -1 -1 1.0E-4
+
+#Labels
+
+## File 5
+fselect 5
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [123.2215,39.9575,84.8625]
+
+#Atoms
+select * & file = 5
+color cpk
+spacefill off
+displayatom on
+set_atom_image 5 0:0:0:0-0:0:0:9 true 1 -1 -1 -1 0.3
+
+#Bonds
+select * & file = 5
+wireframe on
+set_bond_image 5 0:0-0:10 true 1 -1 -1 -1 1.0E-4
+
+#Labels
+
+## File 6
+fselect 6
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [121.992004,56.332,100.70351]
+
+#Atoms
+select * & file = 6
+color cpk
+spacefill off
+displayatom on
+set_atom_image 6 0:0:0:0-0:0:0:15 true 1 -1 -1 -1 0.3
+
+#Bonds
+select * & file = 6
+wireframe on
+set_bond_image 6 0:0-0:17 true 1 -1 -1 -1 1.0E-4
+
+#Labels
+
+## File 7
+fselect 7
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [116.593994,50.705,88.176]
+
+#Atoms
+select * & file = 7
+color cpk
+spacefill off
+displayatom on
+set_atom_image 7 0:0:0:0-0:0:0:23 true 1 -1 -1 -1 0.3
+
+#Bonds
+select * & file = 7
+wireframe on
+set_bond_image 7 0:0-0:28 true 1 -1 -1 -1 1.0E-4
+
+#Labels
+
+## File 8
+fselect 8
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [125.940994,66.8315,109.3085]
+
+#Atoms
+select * & file = 8
+color cpk
+spacefill off
+displayatom on
+set_atom_image 8 0:0:0:0-0:0:0:17 true 1 -1 -1 -1 0.3
+
+#Bonds
+select * & file = 8
+wireframe on
+set_bond_image 8 0:0-0:28 true 1 -1 -1 -1 1.0E-4
+
+#Labels
+
+## File 9
+fselect 9
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [122.491,54.785,89.651505]
+
+#Atoms
+select * & file = 9
+color cpk
+spacefill off
+displayatom on
+set_atom_image 9 0:0:0:0-0:0:0:9 true 1 -1 -1 -1 0.3
+
+#Bonds
+select * & file = 9
+wireframe on
+set_bond_image 9 0:0-0:8 true 1 -1 -1 -1 1.0E-4
+
+#Labels
+
+## File 10
+fselect 10
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [114.143,37.477997,96.522]
+
+#Atoms
+select * & file = 10
+color cpk
+spacefill off
+displayatom on
+set_atom_image 10 0:0:0:0-0:0:0:31 true 1 -1 -1 -1 0.3
+
+#Bonds
+select * & file = 10
+wireframe on
+set_bond_image 10 0:0-0:47 true 1 -1 -1 -1 1.0E-4
+
+#Labels
+
+## File 11
+fselect 11
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [88.99049,78.96651,76.768]
+
+#Atoms
+select * & file = 11
+color cpk
+spacefill off
+displayatom on
+set_atom_image 11 0:0:0:0-0:0:0:14 true 1 -1 -1 -1 0.3
+
+#Bonds
+select * & file = 11
+wireframe on
+set_bond_image 11 0:0-0:13 true 1 -1 -1 -1 1.0E-4
+
+#Labels
+
+## File 12
+fselect 12
+set hbond sidechain
+set ghbond sidechain
+set ssbond sidechain
+set cartoon 0.2
+set ribbonback [125,125,125]
+set cartoon_loop_tube on
+set cartoon_round on
+set center [83.8145,62.325996,96.394]
+
+#Atoms
+select * & file = 12
+color cpk
+spacefill off
+displayatom on
+set_atom_image 12 0:0:0:0-0:0:0:42 true 1 -1 -1 -1 0.3
+
+#Bonds
+select * & file = 12
+wireframe on
+set_bond_image 12 0:0-0:43 true 1 -1 -1 -1 0.15
+
+#Labels
+
+## Status
+set hetero on
+set hydrogen on
+set bondmode and
+set picking distance
+set loadcenter off
+
+fselect none
+fselect -a 1
+fselect -a 2
+fselect -a 3
+fselect -a 4
+fselect -a 5
+fselect -a 6
+fselect -a 7
+fselect -a 8
+fselect -a 9
+fselect -a 10
+fselect -a 11
+fselect -a 12
+display none
+display -a 1
+display -a 2
+display -a 3
+display -a 4
+display -a 5
+display -a 6
+display -a 7
+display -a 8
+display -a 9
+display -a 10
+display -a 11
+display -a 12
+
+center -r {108.707,57.703995,97.076004}
+set viewpoint {108.707,57.703995,688.80255}
+slab off
+set specular 80.0
+set specpower 20.0
+set projection perspective
+set adjustview on
+fog
+
+select all
+selectvertex all
+fselect all

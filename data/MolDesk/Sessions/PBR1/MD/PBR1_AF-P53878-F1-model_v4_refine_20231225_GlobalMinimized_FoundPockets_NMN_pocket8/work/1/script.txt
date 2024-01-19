@@ -1,0 +1,78 @@
+select *@1
+wireframe off
+color structure
+cartoon
+ssbond 0.1
+color ssbonds yellow
+select *@2
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@3
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@4
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@5
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@6
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@7
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@8
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@9
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@10
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select *@11
+wireframe off
+color cpk
+spacefill 0.3
+wireframe 0.0001
+ssbond 0.1
+color ssbonds yellow
+select all
+fselect all

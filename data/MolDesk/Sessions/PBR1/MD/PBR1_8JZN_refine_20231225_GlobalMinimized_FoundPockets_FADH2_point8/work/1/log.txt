@@ -1,0 +1,99 @@
+PDB CHECK TOOL v1.1.1  2014. Sep. 19                                                                                                 
+ 
+  1st   : input PDB file name
+  2nd   : output PDB file name
+  3rd.. : -cap -hyd -alt -bb -dih -ss -as
+          -disableHet -keepTer -remark
+          -mod -mut -rot -cmp
+INFORMATION INPUT
+  1) INPUT FILE
+    format6.pdb                                                                                                                          
+  2) OUTPUT FILE
+    separate.pdb                                                                                                                         
+  3) SPECIFIED OPTION
+     -alt
+     -dih
+ 
+INFORMATION> DIVISION OF CHAINS.
+  CHAIN NAME   RESIDUE NAME   RESIDUE ID   REASON(EXCEPT TER AND CHAIN ID)
+ 
+INFORMATION> EXIST ALTERNATE LOCATION INDICATOR
+  RESIDUE NAME   RESIDUE ID   ATOM NAME
+ 
+INFORMATION> LACKED MAIN CHAIN
+  RESIDUE NAME   RESIDUE ID   ATOM NAME
+ 
+INFORMATION> TERMINAL RESIDUE
+  RESIDUE NAME   RESIDUE ID   DISTANCE
+ 
+INFORMATION> SSBOND CANDIDATES
+ 
+INFORMATION> CYS-(CYM) CANDIDATES
+  CHAIN ID   RESIDUE NAME   RESID ID
+ 
+INFORMATION> EXIST NEAR ATOM
+  RESIDUE NAME   RESIDUE ID   ATOM NAME
+  PRO     PNT     133     2    HD3  O  
+  PRO     PNT     133     2    HG3  O  
+  GLN     PNT     159     1    HG3  O  
+  TRP     PNT     206     1    HB3  O  
+  VAL     PNT     294     1    HA   O  
+  LEU     PNT     308     1   HD23  O  
+  LYS+    PNT     364     3    HD3  O  
+  ARG+    PNT     372     2    HD2  O  
+  ARG+    PNT     372     2    HD3  O  
+  ARG+    PNT     372     2   HH22  O  
+ 
+INFORMATION> LINEAR TORSION ATOM
+  RESIDUE ID           ATOM NAME
+ 
+ WARNING: TOPOLOGY FILE NOT EXIST:C99_aa.tpl
+          SKIP RESIDUE ANALYSIS
+INFORMATION> OUTPUT
+  OUTPUT FILE
+    separate.pdb                                                                                                                         
+ 
+PDB CHECK TOOL v1.1.1  2014. Sep. 19                                                                                                 
+ 
+  1st   : input PDB file name
+  2nd   : output PDB file name
+  3rd.. : -cap -hyd -alt -bb -dih -ss -as
+          -disableHet -keepTer -remark
+          -mod -mut -rot -cmp
+INFORMATION INPUT
+  1) INPUT FILE
+    inp0.pdb                                                                                                                             
+  2) OUTPUT FILE
+    tmp.pdb                                                                                                                              
+  3) SPECIFIED OPTION
+     -ss
+ 
+INFORMATION> DIVISION OF CHAINS.
+  CHAIN NAME   RESIDUE NAME   RESIDUE ID   REASON(EXCEPT TER AND CHAIN ID)
+ 
+INFORMATION> EXIST ALTERNATE LOCATION INDICATOR
+  RESIDUE NAME   RESIDUE ID   ATOM NAME
+ 
+INFORMATION> LACKED MAIN CHAIN
+  RESIDUE NAME   RESIDUE ID   ATOM NAME
+ 
+INFORMATION> TERMINAL RESIDUE
+  RESIDUE NAME   RESIDUE ID   DISTANCE
+ 
+INFORMATION> SSBOND CANDIDATES
+ 
+INFORMATION> CYS-(CYM) CANDIDATES
+  CHAIN ID   RESIDUE NAME   RESID ID
+ 
+INFORMATION> EXIST NEAR ATOM
+  RESIDUE NAME   RESIDUE ID   ATOM NAME
+ 
+INFORMATION> LINEAR TORSION ATOM
+  RESIDUE ID           ATOM NAME
+ 
+ WARNING: TOPOLOGY FILE NOT EXIST:C99_aa.tpl
+          SKIP RESIDUE ANALYSIS
+INFORMATION> OUTPUT
+  OUTPUT FILE
+    tmp.pdb                                                                                                                              
+ 

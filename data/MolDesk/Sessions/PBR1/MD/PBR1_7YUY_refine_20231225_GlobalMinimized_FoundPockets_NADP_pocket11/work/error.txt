@@ -1,0 +1,1 @@
+It is not possible to create a new project in the current project directory.

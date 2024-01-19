@@ -1,0 +1,823 @@
+ ************************************************
+ *                                              *
+ *              sievgene(15/04/29)              *
+ *                                              *
+ *     molprof / AIST Aomi 2-3-26, Koto-ku,     *
+ *           Tokyo 135-0064 JAPAN               *
+ *                                              *
+ *            v4.307.150905                     *
+ *             for docking pose                 *
+ *                                              *
+ ************************************************
+  
+   RANDOM NUMBER METHOD  : FORTRAN RANDOM LIBRARY
+  
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> sievgene(15/04/29)      +
+ +         READ INPUT SPECIFICATION     +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> INPUT
+        1) PROTEIN DATA
+            1-1) TOPOLOGY FILE
+                FORMAT        :ascii  
+                NAME          :Pro.tpl
+            1-2) COORDINATE FILE
+                FORMAT        :ascii  
+                NAME          :Pro.pdb
+            1-3) POCKET POINT FILE
+                FORMAT        :ascii  
+                NAME          :point.pdb
+        2) LIGAND DATA
+            2-1) INPUT TYPE   :FILE
+                FORMAT        :MOL2   
+                NAME          :Lig.mol2
+            2-2) REFERENCE COORDINATE FILE
+                FORMAT        :MOL2   
+                NAME          :Lig.mol2
+        3) ATOM DATA
+            3-1) ATOM DATA FILE
+                NAME          :
+        4) ASA DATA
+            METHOD            :pairwise
+            NAME              :
+  
+        5) LOG FORMAT         :detail
+  
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> INPUT PROTEIN DATA      +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> INPUT POCKET CORRDINATE FILE
+     FILE NAME   :point.pdb                                                     
+                                                                                
+                                                                                
+                                         
+     POINT NUMBER      :          39
+  
+ INFORMATION> INPUT PROTEIN DATA FILE
+     FILE NAME   :Pro.pdb
+     ATOM NUMBER       :        6639
+  
+ INFORMATION> INPUT FORMATTED TOPOLOGY FILE
+  
+      1) TOTAL NUMBER
+        NUMBER OF MOLECULES         :            1
+        NUMBER OF CHAINS            :            1
+        NUMBER OF RESIDUES          :          407
+        NUMBER OF ATOMS             :         6639
+        NUMBER OF BONDS             :         6699
+        NUMBER OF ANGLES            :        12171
+        NUMBER OF TORSIONS          :        24300
+        NUMBER OF IMPRO.            :         1246
+        MAXIMUM NUMBER OF FUNC.     :            1
+        MAXIMUM NUMBER OF ATOM-TYPE :           93
+  
+      2) EACH DATA
+         A) NUMBER OF CHAINS IN EACH MOLECULE 
+          MOLECULE            1    :            1
+         B) NUMBER OF ATOMS IN EACH MOLECULE 
+          MOLECULE            1    :         6639
+         C) NUMBER OF BONDS IN EACH MOLECULE 
+          MOLECULE            1    :         6699
+         D) NUMBER OF ANGLES IN EACH MOLECULE 
+          MOLECULE            1    :        12171
+         E) NUMBER OF TORSIONS IN EACH MOLECULE 
+          MOLECULE            1    :        24300
+         F) NUMBER OF IMPROPER IN EACH MOLECULE 
+          MOLECULE            1    :         1246
+ INFORMATION> PROTEIN SIDE CHAIN
+     SIDE CHAIN NUMBER :          11
+  
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> sievgene(15/04/29)      +
+ +         READ GRID SPECIFICATION      +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> GRID
+        1) GRID-POTENTIAL FILE
+            INPUT FORM    :no read
+            INPUT NAME    :grid_file
+            OUTPUT FORM   :binary 
+            OUTPUT NAME   :grid_file
+        2) RECEPTOR DISTANCE (A) :   6.500000    
+        3) OFFSET OF VDW     (A) :  0.6000000    
+        4) OFFSET OF COULOMB (A) :  0.6000000    
+        5) RADIUS OF MESH    (A) :   1.400000    
+        6) GRID SIZE MERGIN  (A) :   6.500000    
+        7) SMOOTHING ITERATION   :           3
+        8) INTERPOLATION         : lagrange 
+  
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> GENERATE GRID POTENTIAL +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> GRID SIZE
+             NUMBER OF GRID :          60
+      SAMPLING POINT NUMBER :          39
+     GRID BOUND   :
+         X-AXIS:   104.0250     -   122.5520    
+         Y-AXIS:   109.5430     -   129.4710    
+         Z-AXIS:   129.0230     -   148.6810    
+     1 PARTCLE SIZE:
+           0.3140170      0.3377629      0.3331865    
+  
+ INFORMATION> SEARCH A.S.A FOR GRID POTENTIAL
+     A.S.A NUMBER :       18279
+  
+ INFORMATION> GENERATING A.S.A. GRID
+               10 %
+               20 %
+               30 %
+               40 %
+               50 %
+               60 %
+               70 %
+               80 %
+               90 %
+              100 %
+  
+ INFORMATION> GENERATING COULOMB GRID
+               10 %
+               20 %
+               30 %
+               40 %
+               50 %
+               60 %
+               70 %
+               80 %
+               90 %
+              100 %
+  
+ INFORMATION> GENERATING HYDROGEN GRID
+               10 %
+               20 %
+               30 %
+               40 %
+               50 %
+               60 %
+               70 %
+               80 %
+               90 %
+              100 %
+  
+ INFORMATION> WRITE GRID POTENTIAL BINARY FORM:
+     FILE NAME :grid_file
+  
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> sievgene(15/04/29)      +
+ +         READ CONF SPECIFICATION      +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> CONF
+        1) GENERATE CONFORMER
+            TRIAL LIMIT   :      100000
+            CREATE NUMBER :         100
+        2) SORT ATOM SEQUENCE    : T
+        3) DAMPING FACTOR        :  0.7000000    
+        4) PHASE NUMBER          :           3
+        5) ROTATE S-H, O-H TERM. : T
+  
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> sievgene(15/04/29)      +
+ +         READ DOCK SPECIFICATION      +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> DOCK
+        1) DOCKING
+            1-1) METHOD                     : flex     
+            1-2) PROTEIN SURFACE            : electrostatic
+            1-3) GENERATION                 :           1
+            1-4) PLATE NUMBER               :       50000
+            1-5) MATCHING                   :           2
+            1-6) CANDIDATE ATOM DISTANCE (A)
+                 LOWER :   2.500000     -   3.500000    
+                 UPPER :   5.000000     -   12.00000    
+            1-7) DOCKING SPEED              : NORMAL   
+            1-8) DOCKING OR ENERGY ONLY     : DOCKING
+            1-9) EVALUATE H-BOND            : YES
+           1-10) ROTATE PROTEIN SIDE CHAIN  : NO
+           1-11) ROTATE LIGAND -OH          : NO
+        2) SCORE COEFFICIENT
+            2-1) VAN DER WAALS WEIGHT       :   1.000000    
+            2-2) DIELECTRIC WEIGHT          :   1.000000    
+            2-3) A.S.A WEIGHT               :   1.000000    
+            2-4) HYDROGEN-BOND WEIGHT       :   1.000000    
+            2-4) ANISOTROPIC H-BOND WEIGHT  :   1.000000    
+            2-5) INSIDE POCKET DISTANCE (A) :   6.000000    
+  
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> sievgene(15/04/29)      +
+ +         READ MINI SPECIFICATION      +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+       PARAMETERS FOR MINIMIZATION 
+  
+       1) GENERAL PARAMETERS  
+          METHOD          : steep     
+          CPU LIMIT (S)   :    360000.000000000     
+          LOOP LIMIT      :          100
+          UPDATE          :           20
+          MONITORING LOG    :          100
+          CALC. OF RMSD     : true  
+          CONVERGE (RMSF)   :   0.100000000000000     
+          INITIAL STEP(A)   :   1.000000000000000E-002
+          UP RATE           :    1.00000000000000     
+          DOWN RATE         :   0.300000000000000     
+       2) ANALYSIS FILE 
+          LOGICAL UNIT      :           30
+          CLOSE             :  F
+       3) PARAMETERS FOR ENERGY CALCULATION 
+          POTENTIAL FUNC. : AMBER
+          CUT-OFF LOGIC   : Residue-surface
+          CUT-OFF DIST.        :    22.0000000000000     
+          DIELECTRIC IS DEPEND DISTANCE: true  
+          DIELECTRIC VAL. :    4.00000000000000     
+          CALCULATE BOND     
+          CALCULATE ANGLE    
+          CALCULATE TORS.    
+          CALCULATE IMPRO.   
+          CALCULATE VDW14    
+          CALCULATE ELE14    
+          CALCULATE VDW15    
+          CALCULATE ELE15    
+          CALCULATE HYD.     
+          ENERGY IS NOT DIVIDED. NCLUSTer=            1
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> sievgene(15/04/29)      +
+ +         READ OUTPUT SPECIFICATION    +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> OUTPUT
+        1) LIGAND COORDINATE FILE
+            FORMAT        :MOL2   
+                NUMBER        :          10
+                NAME          :output.mol2
+        2) SCORE FILE
+                NUMBER        :          10
+                NAME          :output.score
+  
+ INFORMATION> GENERATE PROTEIN POCKET
+     H-DONAR/H-ACCEPTOR NUMBER   :         131
+     MESH NUMBER                 :         113
+        ATOM ID=  5586 NAME= C  TYPE=  5
+        ATOM ID=  5590 NAME= C  TYPE=  5
+        ATOM ID=  5597 NAME= C  TYPE=  5
+        ATOM ID=  5616 NAME= H  TYPE=  3
+        ATOM ID=  5649 NAME= H  TYPE=  3
+        ATOM ID=  5650 NAME= C  TYPE=  5
+        ATOM ID=  5651 NAME= H  TYPE=  3
+        ATOM ID=  5655 NAME= H  TYPE=  3
+        ATOM ID=  5657 NAME= C  TYPE=  5
+        ATOM ID=  5662 NAME= O  TYPE=  4
+        ATOM ID=  5662 NAME= O  TYPE=  4
+        ATOM ID=  5713 NAME= C  TYPE=  5
+        ATOM ID=  5713 NAME= C  TYPE=  5
+        ATOM ID=  5714 NAME= H  TYPE=  3
+        ATOM ID=  5715 NAME= C  TYPE=  5
+        ATOM ID=  5796 NAME= C  TYPE=  5
+        ATOM ID=  5799 NAME= C  TYPE=  5
+        ATOM ID=  5800 NAME= C  TYPE=  5
+        ATOM ID=  5802 NAME= C  TYPE=  5
+        ATOM ID=  5802 NAME= C  TYPE=  5
+        ATOM ID=  5803 NAME= H  TYPE=  3
+        ATOM ID=  5804 NAME= C  TYPE=  5
+        ATOM ID=  5806 NAME= C  TYPE=  5
+        ATOM ID=  5806 NAME= C  TYPE=  5
+        ATOM ID=  5806 NAME= C  TYPE=  5
+        ATOM ID=  5806 NAME= C  TYPE=  5
+        ATOM ID=  5807 NAME= H  TYPE=  3
+        ATOM ID=  5808 NAME= C  TYPE=  5
+        ATOM ID=  5848 NAME= O  TYPE=  4
+        ATOM ID=  5855 NAME= C  TYPE=  5
+        ATOM ID=  5858 NAME= C  TYPE=  5
+        ATOM ID=  5860 NAME= H  TYPE=  3
+        ATOM ID=  5862 NAME= O  TYPE=  4
+        ATOM ID=  5862 NAME= O  TYPE=  4
+        ATOM ID=  5862 NAME= O  TYPE=  4
+        ATOM ID=  5862 NAME= O  TYPE=  4
+        ATOM ID=  5863 NAME= O  TYPE=  4
+        ATOM ID=  5863 NAME= O  TYPE=  4
+        ATOM ID=  5863 NAME= O  TYPE=  4
+        ATOM ID=  5906 NAME= C  TYPE=  5
+        ATOM ID=  5908 NAME= H  TYPE=  3
+        ATOM ID=  5909 NAME= C  TYPE=  5
+        ATOM ID=  5909 NAME= C  TYPE=  5
+        ATOM ID=  5910 NAME= H  TYPE=  3
+        ATOM ID=  5911 NAME= H  TYPE=  3
+        ATOM ID=  5915 NAME= C  TYPE=  5
+        ATOM ID=  5915 NAME= C  TYPE=  5
+        ATOM ID=  5915 NAME= C  TYPE=  5
+        ATOM ID=  5916 NAME= H  TYPE=  3
+        ATOM ID=  5917 NAME= H  TYPE=  3
+        ATOM ID=  5923 NAME= O  TYPE=  4
+        ATOM ID=  5923 NAME= O  TYPE=  4
+        ATOM ID=  5923 NAME= O  TYPE=  4
+        ATOM ID=  5927 NAME= H  TYPE=  3
+        ATOM ID=  5928 NAME= C  TYPE=  5
+        ATOM ID=  5931 NAME= C  TYPE=  5
+        ATOM ID=  5931 NAME= C  TYPE=  5
+        ATOM ID=  5932 NAME= H  TYPE=  3
+        ATOM ID=  5933 NAME= H  TYPE=  3
+        ATOM ID=  5934 NAME= C  TYPE=  5
+        ATOM ID=  5937 NAME= C  TYPE=  5
+        ATOM ID=  5938 NAME= H  TYPE=  3
+        ATOM ID=  5938 NAME= H  TYPE=  3
+        ATOM ID=  6024 NAME= O  TYPE=  4
+        ATOM ID=  6040 NAME= N  TYPE=  4
+        ATOM ID=  6045 NAME= H  TYPE=  3
+        ATOM ID=  6049 NAME= H  TYPE=  3
+        ATOM ID=  6050 NAME= C  TYPE=  5
+        ATOM ID=  6053 NAME= N  TYPE=  4
+        ATOM ID=  6059 NAME= N  TYPE=  4
+        ATOM ID=  6063 NAME= O  TYPE=  4
+        ATOM ID=  6063 NAME= O  TYPE=  4
+        ATOM ID=  6063 NAME= O  TYPE=  4
+        ATOM ID=  6063 NAME= O  TYPE=  4
+        ATOM ID=  6067 NAME= H  TYPE=  3
+        ATOM ID=  6074 NAME= C  TYPE=  5
+        ATOM ID=  6076 NAME= N  TYPE=  4
+        ATOM ID=  6082 NAME= C  TYPE=  5
+        ATOM ID=  6089 NAME= C  TYPE=  5
+        ATOM ID=  6089 NAME= C  TYPE=  5
+        ATOM ID=  6089 NAME= C  TYPE=  5
+        ATOM ID=  6092 NAME= H  TYPE=  3
+        ATOM ID=  6093 NAME= C  TYPE=  5
+        ATOM ID=  6367 NAME= C  TYPE=  5
+        ATOM ID=  6368 NAME= H  TYPE=  3
+        ATOM ID=  6370 NAME= C  TYPE=  5
+        ATOM ID=  6371 NAME= O  TYPE=  4
+        ATOM ID=  6371 NAME= O  TYPE=  4
+        ATOM ID=  6375 NAME= H  TYPE=  3
+        ATOM ID=  6380 NAME= O  TYPE=  4
+        ATOM ID=  6402 NAME= O  TYPE=  4
+        ATOM ID=  6402 NAME= O  TYPE=  4
+        ATOM ID=  6405 NAME= C  TYPE=  5
+        ATOM ID=  6407 NAME= C  TYPE=  5
+        ATOM ID=  6409 NAME= H  TYPE=  3
+        ATOM ID=  6411 NAME= O  TYPE=  4
+        ATOM ID=  6411 NAME= O  TYPE=  4
+        ATOM ID=  6411 NAME= O  TYPE=  4
+        ATOM ID=  6411 NAME= O  TYPE=  4
+        ATOM ID=  6411 NAME= O  TYPE=  4
+        ATOM ID=  6412 NAME= N  TYPE=  4
+        ATOM ID=  6412 NAME= N  TYPE=  4
+        ATOM ID=  6412 NAME= N  TYPE=  4
+        ATOM ID=  6412 NAME= N  TYPE=  4
+        ATOM ID=  6415 NAME= C  TYPE=  5
+        ATOM ID=  6416 NAME= O  TYPE=  4
+        ATOM ID=  6416 NAME= O  TYPE=  4
+        ATOM ID=  6423 NAME= H  TYPE=  3
+        ATOM ID=  6427 NAME= O  TYPE=  4
+        ATOM ID=  6427 NAME= O  TYPE=  4
+        ATOM ID=  6427 NAME= O  TYPE=  4
+        ATOM ID=  6428 NAME= N  TYPE=  4
+        ATOM ID=  6436 NAME= H  TYPE=  3
+  
+     TOTAL POCKET TRIANGLE:       25214
+  
+  
+ ++++++++++++++++++++++++++++++++++++++++
+ +                                      +
+ + INFORMATION> SCREENING START         +
+ +                                      +
+ ++++++++++++++++++++++++++++++++++++++++
+  
+ INFORMATION> POCKET CENTER COORDINATE
+      X-AXIS :   112.8526    
+      Y-AXIS :   120.0685    
+      Z-AXIS :   138.9075    
+  
+ INFORMATION> SCREENING NUMBER :           1
+ INFORMATION> INPUT REFERENCE LIGAND FILE
+  
+    FILE NAME    :Lig.mol2                                                      
+                                                                                
+                                                                                
+                                         
+    ATOM NUMBER  :          90
+    BOND NUMBER  :          95
+  
+ INFORMATION> LIGAND ANALYZE
+     ATOM BELONGS RING STRUCTURE:
+               10          12          13          17          21          23
+          24          26          27          28          29          30
+          33          34          36          62          63          64
+          65          66          67          69          70          71
+          73          75          76          78          83          84
+          86
+  
+     ROTATIVE TORSION NUMBER :          10
+        (O-H, S-H TERMAINAL) :           9
+  
+ INFORMATION> INPUT LIGAND FILE
+  
+    FILE NAME    :Lig.mol2                                                      
+                                                                                
+                                                                                
+                                         
+    ATOM NUMBER  :          90
+    BOND NUMBER  :          95
+  
+ INFORMATION> LIGAND ANALYZE
+     ATOM BELONGS RING STRUCTURE:
+               10          12          13          17          21          23
+          24          26          27          28          29          30
+          33          34          36          62          63          64
+          65          66          67          69          70          71
+          73          75          76          78          83          84
+          86
+  
+     ROTATIVE TORSION NUMBER :          10
+        (O-H, S-H TERMAINAL) :           9
+  
+ INFORMATION> GENERATE CONFOMER
+     PHASE NUMBER            :   3.000000    
+     ROTATIVE TORSION NUMBER :          19
+     TRIAL ROTRATION         :    10000000
+     TRIAL EXECUTION         :      100000
+     CONFOMER NUMBER         :         100
+ INFORMATION> LIGAND ACCEPTOR, DONAR
+     DONAR NUMBER:          14
+               32 H 
+               34 H 
+               37 H 
+               39 H 
+               40 H 
+                5 H 
+                7 H 
+               10 H 
+               13 H 
+               16 H 
+               18 H 
+               20 H 
+               22 H 
+               25 H 
+     ACCEPTOR NUMBER:          18
+                3 O 
+                4 O 
+                6 O 
+                8 O 
+                9 O 
+               11 O 
+               12 O 
+               14 O 
+               15 O 
+               17 O 
+               19 O 
+               21 O 
+               23 O 
+               24 O 
+               26 O 
+               29 N 
+               30 N 
+               35 N 
+  
+ INFORMATION> GLOBAL SEARCH START
+ INFORMATION> CONFORMER NUMBER =         100 GENERATION =           1
+       ID    EDGE-LOW  EDGE-UPR  PLATE NUM  TRIAL NUMBER
+         1     3.496     5.027       61428     31585
+         2     3.496     5.027       70212     33353
+         3     3.496     5.027       70212     31180
+         4     3.496     5.027       70212     31132
+         5     3.496     5.027       74382     32348
+         6     3.496     5.027       74382     33348
+         7     3.496     5.027       74382     31831
+         8     3.496     5.027       65766     32106
+         9     3.496     5.027       65766     32060
+        10     3.496     5.027       65766     31992
+        11     3.496     5.027       58512     32745
+        12     3.496     5.027       58512     31819
+        13     3.496     5.027       58512     32011
+        14     3.496     5.027       57360     32122
+        15     3.496     5.027       57360     31756
+        16     3.496     5.027       57360     30730
+        17     3.496     5.027       66948     33029
+        18     3.496     5.027       66948     31635
+        19     3.496     5.027       66948     32750
+        20     3.496     5.027       57090     31671
+        21     3.496     5.027       57090     32128
+        22     3.496     5.027       57090     31825
+        23     3.496     5.027       74382     31378
+        24     3.496     5.027       74382     32065
+        25     3.496     5.027       74382     31047
+        26     3.496     5.027       65766     31902
+        27     3.496     5.027       65766     31953
+        28     3.496     5.027       65766     31796
+        29     3.496     5.027       58512     30813
+        30     3.496     5.027       58512     32435
+        31     3.496     5.027       58512     31759
+        32     3.496     5.027       57360     32210
+        33     3.496     5.027       57360     31703
+        34     3.496     5.027       57360     32181
+        35     3.496     5.027       66948     31532
+        36     3.496     5.027       66948     32083
+        37     3.496     5.027       66948     30990
+        38     3.496     5.027       57090     31738
+        39     3.496     5.027       57090     31449
+        40     3.496     5.027       57090     31716
+        41     3.496     5.027       74382     31126
+        42     3.496     5.027       74382     31620
+        43     3.496     5.027       74382     31836
+        44     3.496     5.027       65766     31973
+        45     3.496     5.027       65766     31482
+        46     3.496     5.027       65766     32564
+        47     3.496     5.027       58512     32398
+        48     3.496     5.027       58512     32708
+        49     3.496     5.027       58512     32295
+        50     3.496     5.027       57360     33078
+        51     3.496     5.027       57360     31709
+        52     3.496     5.027       57360     31600
+        53     3.496     5.027       66948     32267
+        54     3.496     5.027       66948     32595
+        55     3.496     5.027       66948     32966
+        56     3.496     5.027       57090     31906
+        57     3.496     5.027       57090     33013
+        58     3.496     5.027       57090     31339
+        59     3.480     5.137       48540     32078
+        60     3.480     5.137       48540     32078
+        61     3.480     5.137       48540     32078
+        62     3.488     5.082       54666     32207
+        63     3.488     5.082       54666     32681
+        64     3.488     5.082       54666     31779
+        65     3.473     5.191       52728     33197
+        66     3.473     5.191       52728     32563
+        67     3.473     5.191       52728     33076
+        68     3.480     5.137       50442     33037
+        69     3.480     5.137       50442     32842
+        70     3.480     5.137       50442     32772
+        71     3.488     5.082       50628     32847
+        72     3.488     5.082       50628     32878
+        73     3.488     5.082       50628     32738
+        74     3.473     5.191       52080     33226
+        75     3.473     5.191       52080     32729
+        76     3.473     5.191       52080     32782
+        77     3.488     5.082       45516     30123
+        78     3.488     5.082       45516     30123
+        79     3.488     5.082       45516     30123
+        80     3.488     5.082       51018     32842
+        81     3.488     5.082       51018     32939
+        82     3.488     5.082       51018     33012
+        83     3.473     5.191       52572     33037
+        84     3.473     5.191       52572     32922
+        85     3.473     5.191       52572     33428
+        86     3.480     5.137       48540     32078
+        87     3.480     5.137       48540     32078
+        88     3.480     5.137       48540     32078
+        89     3.488     5.082       54666     32697
+        90     3.488     5.082       54666     32411
+        91     3.488     5.082       54666     33039
+        92     3.473     5.191       52728     32911
+        93     3.473     5.191       52728     33335
+        94     3.473     5.191       52728     33307
+        95     3.480     5.137       50442     32596
+        96     3.480     5.137       50442     32689
+        97     3.480     5.137       50442     32868
+        98     3.488     5.082       50628     32695
+        99     3.488     5.082       50628     32783
+       100     3.488     5.082       50628     32763
+  
+ INFORMATINO> CREATE NEXT CONFORMER
+  
+ INFORMATION> LIGAND ANALYZE
+     ATOM BELONGS RING STRUCTURE:
+               10          12          13          17          21          23
+          24          26          27          28          29          30
+          33          34          36          62          63          64
+          65          66          67          69          70          71
+          73          75          76          78          83          84
+          86
+  
+     ROTATIVE TORSION NUMBER :          10
+        (O-H, S-H TERMAINAL) :           9
+  
+ INFORMATION> GENERATE CONFOMER
+     PHASE NUMBER            :   3.000000    
+     ROTATIVE TORSION NUMBER :          19
+     TRIAL ROTRATION         :    10000000
+     TRIAL EXECUTION         :      100000
+     CONFOMER NUMBER         :         100
+ INFORMATINO> NEW CONFOMER NUMBER =          28
+  
+  
+ INFORMATION> BEFORE MINIMIZE RANKING :EXPERIMENT ID=1         
+ INFORMATION> LOCAL SCORE RANKING          10
+ 
+ 
+     SCORE(/100)  dG    LE/10  NHA rotNum    ASA     ELE     HYD     VDW   SURFACE   RMSD
+    1   -3.9357 -11.07   -0.74  53  19    -164.62    0.00 -228.95    0.00    0.00   34.34
+    2   -3.9355 -11.07   -0.74  53  19    -164.60    0.00 -228.95    0.00    0.00   34.34
+    3   -3.8155 -10.13   -0.72  53  19    -194.69    0.00 -186.86    0.00    0.00   32.17
+    4   -3.7268  -9.18   -0.70  53  19    -234.04    0.00 -138.64    0.00    0.00   30.63
+    5   -3.7255  -9.18   -0.70  53  19    -233.92    0.00 -138.64    0.00    0.00   30.63
+    6   -3.7229  -9.17   -0.70  53  19    -233.47    0.00 -138.82    0.00    0.00   30.63
+    7   -3.6462  -8.93   -0.69  53  19    -228.35    0.00 -136.27    0.00    0.00   30.85
+    8   -3.6255  -9.53   -0.68  53  19    -182.91    0.00 -179.64    0.00    0.00   33.90
+    9   -3.6179 -10.20   -0.68  53  19    -135.79    0.00 -226.00    0.00    0.00   34.13
+   10   -3.5852  -9.49   -0.68  53  19    -174.48    0.00 -184.04    0.00    0.00   31.87
+  
+ REFERENCE COORDINATE DATA
+    999.90  999.90    0.00    0.00
+  
+ INFORMATION> CREATED LIGAND TOPOLOGY
+     ATOM NUMBER     :          90
+     BOND NUMBER     :          95
+     ANGLE NUMBER    :         163
+     TORSION NUMBER  :         233
+     IMPROPER NUMBER :          21
+  
+ INFORMATION> LOCAL SEARCH START
+               10 %
+               20 %
+               30 %
+               40 %
+               50 %
+               60 %
+               70 %
+               80 %
+               90 %
+              100 %
+ INFORMATION> LOCAL SEARCH FINISHED
+ 
+ INFORMATION> CLUSTERING
+     METHOD   : AVERAGE 
+     NUMBER   :          10
+ 
+ INFORMATION> CLUSTERING RESULT
+                     1  -524.2576    
+                     2  -521.8416    
+                     6  -507.2247    
+                     7  -507.1002    
+                    21  -460.7725    
+                    35  -416.3358    
+                    45  -387.9145    
+                    49  -375.5325    
+                    68  -350.4483    
+                    84  -329.0075    
+                    85  -328.9500    
+                    93  -324.2937    
+                    95  -323.3810    
+                    96  -323.3235    
+                    97  -320.8720    
+                    98  -320.7800    
+   CLUSTER    1 SCORE=  -524.258 STRUCTURES=  16
+                    14  -475.8745    
+                    20  -464.6337    
+                    24  -454.1390    
+                    25  -453.9756    
+                    82  -329.1717    
+                    83  -329.0413    
+                    90  -325.6541    
+                    91  -325.5238    
+   CLUSTER    2 SCORE=  -475.875 STRUCTURES=   8
+                     3  -515.9166    
+                    13  -476.2884    
+                    27  -450.1785    
+                    51  -368.9232    
+                    62  -353.3382    
+   CLUSTER    3 SCORE=  -515.917 STRUCTURES=   5
+                    16  -471.1884    
+                    22  -458.4080    
+                    30  -438.4028    
+                    53  -365.1058    
+                    54  -365.0287    
+                    55  -364.8685    
+                    56  -364.7809    
+                    86  -328.6157    
+   CLUSTER    4 SCORE=  -471.188 STRUCTURES=   8
+                     4  -508.9649    
+                     8  -503.2159    
+                     9  -501.1518    
+                    10  -488.6086    
+                    12  -480.9525    
+                    29  -444.3170    
+                    60  -355.0424    
+                    61  -355.0417    
+                    63  -352.6918    
+                    64  -352.6912    
+                    87  -328.5994    
+                    89  -326.0286    
+   CLUSTER    5 SCORE=  -508.965 STRUCTURES=  12
+                     5  -508.7370    
+                    17  -469.0521    
+                    18  -467.4266    
+                    43  -400.6829    
+                    44  -400.6615    
+                    52  -368.8766    
+                    57  -361.3297    
+   CLUSTER    6 SCORE=  -508.737 STRUCTURES=   7
+                    19  -465.2073    
+                    32  -428.8429    
+                    34  -424.6229    
+                    42  -401.6767    
+                    76  -336.0815    
+                    77  -336.0303    
+                    78  -335.6382    
+                    79  -335.5871    
+                    92  -325.3624    
+   CLUSTER    7 SCORE=  -465.207 STRUCTURES=   9
+                    26  -451.6781    
+                    33  -427.7042    
+                    39  -413.0266    
+                    40  -411.1570    
+                    41  -404.3603    
+                    46  -378.7748    
+                    47  -378.6502    
+                    48  -378.3618    
+                    50  -370.6781    
+                    58  -360.7073    
+                    59  -357.8850    
+                    80  -331.9002    
+                    99  -317.7409    
+                   100  -317.7386    
+   CLUSTER    8 SCORE=  -451.678 STRUCTURES=  14
+                    11  -486.1401    
+                    15  -473.1738    
+                    23  -454.2616    
+                    28  -446.8140    
+                    31  -430.6233    
+                    36  -416.2595    
+                    37  -414.6923    
+                    38  -414.6706    
+                    69  -348.1787    
+                    70  -348.1649    
+                    74  -344.8408    
+                    75  -344.8269    
+                    81  -329.2647    
+                    88  -328.5176    
+                    94  -323.6961    
+   CLUSTER    9 SCORE=  -486.140 STRUCTURES=  15
+                    65  -351.7541    
+                    66  -351.6940    
+                    67  -351.6684    
+                    71  -344.9947    
+                    72  -344.9347    
+                    73  -344.9091    
+   CLUSTER   10 SCORE=  -351.754 STRUCTURES=   6
+ 
+ INFORMATION> AFTER MINIMIZE RANKING
+ INFORMATION> AFTER MINIMIZE RANKING :EXPERIMENT ID=1         
+ INFORMATION> LOCAL SCORE RANKING          10
+ 
+   COMPOUND NAME : inp8.mol2
+   FILE NAME     : Lig.mol2
+ 
+     SCORE(/100)  dG    LE/10  NHA rotNum    ASA     ELE     HYD     VDW   SURFACE   RMSD
+@   1   -5.2426 -12.41   -0.99  53  19    -398.84    0.00 -112.85  -12.56   85.67   33.16
+@   2   -4.7587 -11.09   -0.90  53  19    -356.90    0.00 -107.33  -11.64   82.06   34.17
+@   3   -5.1592 -12.22   -0.97  53  19    -388.62    0.00 -114.84  -12.45   76.42   33.46
+@   4   -5.0874 -12.32   -0.96  53  19    -357.23    0.00 -137.22  -14.29   89.42   34.33
+@   5   -5.0896 -11.77   -0.96  53  19    -391.35    0.00 -102.16  -15.46   82.84   32.69
+@   6   -5.0722 -11.88   -0.96  53  19    -383.95    0.00 -109.53  -13.74   81.16   31.54
+@   7   -4.6521 -11.32   -0.88  53  19    -309.69    0.00 -142.86  -12.66   84.40   35.05
+@   8   -4.5168 -10.05   -0.85  53  19    -340.88    0.00  -92.07  -18.73   79.78   32.03
+@   9   -4.8614 -12.15   -0.92  53  19    -311.47    0.00 -162.09  -12.58   85.11   37.93
+@  10   -3.5175  -9.92   -0.66  53  19    -126.86    0.00 -224.89    0.00   85.59   37.81
+  
+ REFERENCE COORDINATE DATA
+    999.90  999.90    0.00    0.00
+  
+ INFORMATION> ALL EXPERIMENT FINISHED
+  
+ INFORMATION> COMPOUND RANKING           1
+ 
+       COMPOUND NAME                           SCORE(/100)  dG     LE(/10)     NHA
+@@     1 inp8.mol2                                   -5.24  -12.41   -0.99         53
+  
+ INFORMATION> LIGAND EFFICIENCY RANKING
+ 
+       COMPOUND NAME                                 LE(/10)
+@LE     1 inp8.mol2                                   -0.99
+ 
+     TOTAL EXPERIMENT NUMBER  :           1
+     TOTAL TRIAL NUMBER       :               3220846
+     TOTAL CPU TIME(S)  :   56.85409    
+         INPUT   :   1.060225    
+         GRID    :   15.49111    
+         CONF    :  0.2303467    
+         DOCK    :   19.30347    
+         MIN     :   19.84429    

@@ -1,0 +1,92 @@
+PHASE> INPUT
+  LIGAND  = MOL2
+  NAMELI  = Lig.mol2
+  REFERE  = MOL2
+  NAMERE  = Lig.mol2
+  TOPOLO  = FORM
+  NAMETO  = Pro.tpl
+  COORDI  = PDB
+  NAMECO  = Pro.pdb
+  POINTC  = PDB
+  NAMEPO  = point.pdb
+
+  ASAMET = PAIR
+  DAMPPA = 1.0d0
+  SETTAR = NORE
+  QUIT
+
+PHASE> GRID
+  GRIDPOtential    = NORE
+  OUTGRIdpotential = BINA
+  NAMEGRid         = grid_file
+
+  PROBDIst = 6.5
+  MARGIN   = 6.5
+  ITERAT   = 3
+  RADVDW   = 0.6
+  RADELE   = 0.6
+  RADMESh  = 1.4
+
+  DAMPVW = 0.99d0
+
+  USEPBG = NO
+  QUIT
+
+PHASE> CONF
+  ATMMDL           = ALL
+  CONFLImit        = 100000
+  CONFORmernumber  = 100
+  SORTATom         = YES
+  DAMPINg          = 0.7
+  PHASETorsion     = 3
+  ROTTER           = YES
+  QUIT
+
+PHASE> DOCK
+  METHOD       = FLEX
+  DOCKSP       = NORM
+  CANDID       = 100
+  GENERAtion   = 1
+  NUMCONFomer  = 50000
+  MATCHING  =  2
+  LOWMIN    =  2.5
+  LOWMAX    =  3.5
+  UPRMIN    =  5.0
+  UPRMAX    = 12.0
+  PROSUR    = ELEC
+
+  WETVDW = 1.0
+  WETASA = 1.0
+  WETELE = 1.0
+  WETHYD = 1.0
+  WETANH = 1.0
+  EVALHB = YES
+  ROTLOH = NO
+  ROTPSC = NO
+  MOVNUM = 200
+  QUIT
+
+EXE> MIN
+  METHOD=  STEEP       CPUTIM  =  360000.0
+  UPRATE=  1.0         DOWNRATE=  0.3
+  LOOPLI=  100         UPDATE  =  20
+  MONITO=  100         CONVGR  =  0.1D0
+  CUTMET=  RESA        CUTLEN  =  22.0D0
+  DIEFUN=  DIST        DIEVAL  =  4.0D0
+  LOGFOR=  SHOR
+  BESTFI=  YES
+  QUIT
+
+PHASE> OUTPUT
+  CLUSTER = YES
+  CLUMET  = AVERAGE
+  NCLUST  = 10
+  CANDID = 10
+  SCOREN = 10
+  COORDI = MOL2
+  NAMECO = output.mol2
+  NAMESC = output.score
+  QUIT
+
+EXE> SIEV
+

@@ -1,0 +1,2 @@
+Find Pocket : Pocket(point) exists already. When you want to remake a pocket, please delete all pockets(points).
+Find Pocket : Pocket(point) exists already. When you want to remake a pocket, please delete all pockets(points).
